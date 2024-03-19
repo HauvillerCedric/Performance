@@ -1,0 +1,180 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Permis B{% endblock %}
+
+{% block body %}
+    <div class="bannerLicenceB"></div>
+
+    <section>
+        <div class="containerLicenceB container text-start">
+            <div class="containerDirectionHome container text-start mt-3">
+                <p><a href="{{ path('app_homepage_index') }}">Accueil</a> > Permis B </p>
+            </div>
+            <hr class="firstHr mb-5 mt-5">
+            <h1 class="h1Color">Le Permis B</h1>
+            <p>La formation pour l'obtention du permis de conduire (catégorie B) constitue le fondement de notre activité, et nous accompagnons annuellement plus d'une centaine d'apprenants. Nos leçons de conduite sont proposées dans le bassin mulhousien. Nos instructeurs sont disponibles pour vous du lundi au vendredi, de 8h à 20h, ainsi que le samedi, de 8h à 17h</p>
+            <hr class="hrH1 mb-5">
+            <h1 class="h1Color">Les conditions à respecter lors de la formation au permis B </h1>
+            <p>Différentes conditions sont à respecter lors de cette formation :</p>
+            <ul class="ulWhite">
+                <li>Être âgé d'au moins 16 ans au moment de l'inscription. En effet, la constitution du dossier de permis de conduire (Cerfa 02) ne peut être effectuée qu'à partir de l'âge de 16 ans.</li>
+                <li>Avoir au moins 16 ans pour passer l'examen du Code de la Route.</li>
+                <li>Être âgé d'au moins 17 ans lors de l'examen pratique.</li>
+            </ul>
+            <hr class="hrH1 mb-5">
+            <h1 class="h1Color"> La formation pour l'obtention du permis</h1>
+            <p> La formation est composé de deux parties</p>
+            <div class="accordion" id="accordionExample">
+                <!-- Accordion Item #1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            La formation théorique
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class=" accordionColor accordion-body">
+                           <p>"Préparation à l'Examen Théorique Général (ETG) ou Code de la Route</p>
+                           <p>Dans le cadre de cette préparation, nous offrons :</p>
+                            <ul class="ulWhite">
+                                <li>Des cours de code dispensés par nos instructeurs qualifiés.</li>
+                                <li>Accès illimité aux codes-tests audiovisuels dans n'importe laquelle de nos agences.</li>
+                                <li>Accès illimité aux codes-tests en ligne via notre service Prépacode.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            La formation pratique
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordionColor accordion-body">
+                            <p>La formation pratique englobe :</p>
+                            <ul class="ulWhite">
+                                <li>Une évaluation initiale visant à déterminer le volume de formation prévisionnel et personnalisé.</li>
+                                <li>Les séances de conduite proprement dites : La durée de la formation (avec un minimum de 20 heures) dépend du volume prévisionnel établi lors de l'évaluation initiale et surtout du temps nécessaire à l'accomplissement des objectifs des 4 étapes du programme de formation.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="containerPriceLicenceB container">
+            <div class="rowFeeLicenceB row">
+                <div class="col-md-6 order-md-1">
+                    <!-- Tableau 1 : Tarifs -->
+                    <table class="tableLicenceB table">
+                        <tbody>
+                        <tr>
+                            <td class="table-danger">Inscription à l'auto-école</td>
+                            <td class="table-danger">{{ licenceB.inscriptionFee }}€</td>
+                        </tr>
+                        <tr>
+                            <td class="table-danger">Forfait code</td>
+                            <td class="table-danger">{{ licenceB.codePackage }}€</td>
+                        </tr>
+                        <tr>
+                            <td class="table-danger">Forfait conduite (pour 20 heures de conduite)</td>
+                            <td class="table-danger">{{ licenceB.driving * 20 }}€</td>
+                        </tr>
+                        <tr>
+                            <td class="table-danger">Livret de conduite</td>
+                            <td class="table-danger">{{ licenceB.book }}€</td>
+                        </tr>
+                        <tr>
+                            <td class="table-danger">Passage de l'examen pratique</td>
+                            <td class="table-danger">{{ licenceB.drivingTest }}€</td>
+                        </tr>
+                        <tr>
+                            <td class="table-danger" colspan="2"><strong>Total du forfait:</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="table-danger text-end" colspan="2"><strong>{{ licenceB.inscriptionFee + licenceB.codePackage + (licenceB.driving * 20) + licenceB.book + licenceB.drivingTest }}€</strong></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <!-- Tableau 2 : Tarif unitaire code -->
+                    <table class="tableLicenceB table">
+                        <tbody>
+                        <tr>
+                            <td class="table-info">Tarif unitaire code:</td>
+                            <td class="table-info"></td>
+                        </tr>
+                        <tr>
+                            <td class="table-info">Livre de code</td>
+                            <td class="table-info">{{ licenceB.codeBook }}€</td>
+                        </tr>
+                        <tr>
+                            <td class="table-info">Passage de l'éxamen théorique</td>
+                            <td class="table-info">{{ licenceB.codeTest }}€</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <!-- Tableau 3 : Tarif unitaire conduite et examen -->
+                    <table class="tableLicenceB table">
+                        <tbody>
+                        <tr>
+                            <td class="table-active">Tarif unitaire conduite et examen:</td>
+                            <td class="table-active"></td>
+                        </tr>
+                        <tr>
+                            <td class="table-active">Heure de conduite</td>
+                            <td class="table-active">{{ licenceB.driving }}€</td>
+                        </tr>
+                        <tr>
+                            <td class="table-active">Livret mécanique</td>
+                            <td class="table-active">{{ licenceB.inspectionsBook }}€</td>
+                        </tr>
+                        <tr>
+                            <td class="table-active">Atelier mécanique</td>
+                            <td class="table-active">{{ licenceB.inspectionWorkshop }}€</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <!-- Tableau 4 : Tarif Unitaire administratif -->
+                    <table class="tableLicenceB table">
+                        <tbody>
+                        <tr>
+                            <td class="table-primary">Tarif Unitaire administratif:</td>
+                            <td class="table-primary"></td>
+                        </tr>
+                        <tr>
+                            <td class="table-primary">Fabrication du permis</td>
+                            <td class="table-primary">{{ licenceB.card }}€</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-6 order-md-2">
+                    <h3 class="titleFeeLicenceB">Tarifs et Conditions de Conduite</h3>
+                    <p>Il est important de noter que le forfait présenté ici est donné à titre d'exemple. Le prix total du permis peut varier en fonction du parcours de chaque élève. Seules nos monitrices sont habilitées à estimer le moment où l'élève est prêt pour passer l'examen pratique. Le nombre d'heures de conduite nécessaires peut donc être différent pour chaque personne.</p>
+                    <p>Nous offrons également des facilités de paiement pour vous aider à gérer les coûts liés à l'obtention de votre permis de conduire. N'hésitez pas à discuter avec notre équipe pour trouver la solution qui vous convient le mieux.</p>
+                    <p>Enfin, sachez que nous mettons tout en œuvre pour vous offrir une formation de qualité, conforme aux normes en vigueur, et pour vous préparer de manière efficace à l'examen du permis de conduire. Votre réussite est notre priorité absolue.</p>
+                    <p>Il est primordial d'écouter attentivement les conseils et les instructions de votre monitrice de conduite tout au long de votre formation. Elle possède l'expérience nécessaire pour évaluer vos progrès et vous guider de manière appropriée. En lui faisant confiance et en suivant ses conseils, vous augmenterez vos chances de réussite à l'examen du permis de conduire et vous deviendrez un conducteur plus sûr et plus confiant sur la route.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="secondContainerLicenceB container text-start">
+            <h1 class="h1Color">Le permis B pour plusieurs véhicules</h1>
+            <p>On retrouve</p>
+            <ul class="ulWhite">
+                <li>des véhicules automobiles ayant un poids total autorisé en charge (PTAC) qui n’excède pas 3,5 tonnes :</li>
+                <li>affectés au transport de personnes et comportant, outre le siège du conducteur, huit places assises au maximum (véhicule 9 places);</li>
+                <li>affectés au transport de marchandises ;</li>
+                <li>les véhicules ci-dessus attelés d’une remorque lorsque le poids total autorisé en charge (PTAC) de la remorque est inférieur ou égal à 750 kilogrammes,</li>
+                <li>les véhicules attelés d’une remorque lorsque le poids total autorisé en charge (PTAC) de la remorque est supérieur à 750 kilogrammes, à condition, d’une part, que le poids total autorisé en charge (PTAC) de la remorque soit inférieur ou égal au poids à vide du véhicule tracteur et, d’autre part, que la somme des poids totaux autorisés en charge (PTAC) du véhicule tracteur et de la remorque soit inférieure ou égale à 3,5 tonnes.</li>
+            </ul>
+        </div>
+    </section>
+
+{% endblock %}

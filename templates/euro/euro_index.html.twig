@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Le permis à 1€{% endblock %}
+
+{% block body %}
+    <div class="bannerEuro"> </div>
+    <section>
+        <div class="containerEuro container text-start">
+            <div class="containerDirectionHome container text-start mt-3">
+                <p><a href="{{ path('app_homepage_index') }}">Accueil</a> > Permis à 1€ </p>
+            </div>
+            <hr class="firstHr mb-5 mt-5">
+            <h1 class="h1Color">Qu'est ce que c'est?</h1>
+            <img src="{{ asset('assets/images/logoEuroBlack.jpg') }}" class="logoQualitePermisUnEuro mb-5"  alt="Permis à 1€ logo">
+            <p>Il s'agit d'un prêt dont les frais d'intérêt sont couverts par l'État.</p>
+            <p>Le programme "permis à un euro par jour" a été instauré par l'État, en collaboration avec des institutions de prêt et des auto-écoles, dans le but d'assister les jeunes âgés de 15 à 25 ans dans le financement de leur formation au permis de conduire. Ce dispositif offre aux jeunes la possibilité de bénéficier d'une facilité de paiement : le coût total de la formation reste inchangé, mais l'institution financière avance les fonds et l'État prend en charge les frais d'intérêt.</p>
+            <p>Un crédit vous engage et doit être remboursé. Vérifiez vos capacités de remboursement avant de vous engager.</p>
+            <hr class="hrH1 mb-5">
+            <h1 class="h1Color">Pourquoi?</h1>
+            <p>Le programme du « permis à un euro par jour » vise à atteindre deux objectifs clés :</p>
+            <ul>
+                <li class="liColor">Favoriser l'accès au permis de conduire, considéré comme un élément souvent prohibitif et décourageant pour les personnes cherchant un emploi.</li>
+                <li class="liColor">Renforcer la qualité globale de la formation en établissant des partenariats avec les auto-écoles qui s'engagent dans une démarche d'excellence.</li>
+            </ul>
+            <hr class="hrH1 mb-5">
+            <h1 class="h1Color">
+                Pour quels montants de prêt est-ce que le programme du « permis à un euro par jour » est disponible ?</h1>
+            <p>Depuis le 1er juillet 2016, l’opération « permis à un euro par jour » prévoit de nouvelles modalités de souscriptions de prêt :</p>
+            <ul>
+                <li class="liColor">Les candidats qui n'ont pas encore bénéficié du programme peuvent, lors de leur inscription à une formation au permis de conduire, obtenir un prêt de 600, 800, 1 000 ou 1 200 €.</li>
+                <li class="liColor">Les candidats qui ont déjà profité du programme auront la possibilité, en cas d'échec à l'épreuve pratique du permis de conduire, de demander un prêt de 300 € pour soutenir une formation supplémentaire visant à obtenir la même catégorie de permis de conduire</li>
+            </ul>
+            <hr class="hrH1 mb-5">
+            <h1 class="h1Color">Qui est éligible pour bénéficier de ce programme ?</h1>
+            <p>Le programme est ouvert à tous les jeunes âgés de 15 à 25 ans révolus au moment de la signature d'un contrat de formation avec une auto-école partenaire, quel que soit leur statut, sous réserve de l'acceptation du dossier par l'établissement financier.</p>
+            <p>De plus, les jeunes bénéficiaires d'une aide publique, qu'elle provienne d'une collectivité locale ou de l'État, ont également la possibilité de demander à bénéficier du prêt.</p>
+            <hr class="hrH1 mb-5">
+            <h1 class="h1Color">Comment peut-on bénéficier de ce programme ?</h1>
+            <p>Pour bénéficier de ce programme, vous pouvez vous rendre dans l'une de nos agences situées à Mulhouse ou Pfastatt, où notre équipe se chargera de toutes les démarches nécessaires.</p>
+            <p class="pEnding">Pour consulter nos coordonnées, <strong>cliquez ICI</strong>.</p>
+        </div>
+    </section>
+{% endblock %}

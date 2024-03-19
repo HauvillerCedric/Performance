@@ -1,0 +1,619 @@
+/* Variables */
+:root {
+    --main-color: #d31292;
+    --secondary-color: #FFFFFF;
+    --background-color: black;
+    --text-color: white;
+    --banner-height: 800px;
+    --banner-secondary: #171819;
+}
+
+/* CSS Common to all pages */
+
+body {
+    background-color: black;
+}
+
+.firstHr, .hrH1 {
+    width: 200px;
+}
+
+.firstHr {
+    border-color: var(--main-color);
+}
+
+.hrH1 {
+    border-color: var(--secondary-color);
+}
+
+.h1Color {
+    color: var(--main-color);
+}
+
+.pEnding {
+    margin-bottom: 100px;
+}
+
+.liColor {
+    color: var(--secondary-color);
+}
+
+.titleExplain {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.accordionColor {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.containerDirectionHome a {
+    text-decoration: none; /* Suppression du soulignement du lien */
+    color: inherit;
+}
+
+.containerDirectionHome p {
+    font-size: x-large;
+}
+
+/* Specific CSS for Navbar */
+.icons {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.social-icon {
+    margin-right: 30px;
+    text-decoration: none;
+    color: var(--main-color) !important;
+}
+
+.user-icon,
+.user-icon-connect {
+    color: var(--secondary-color) !important;
+}
+
+/* Specific CSS for Homepage */
+.textQuestion {
+    color: var(--main-color) !important;
+}
+
+.cardSize {
+    width: 25rem;
+}
+
+.borderCardColor {
+    border-color: #d31292 !important
+}
+
+.borderButtonColor {
+    border-color: #d31292 !important
+}
+
+.marginP {
+    margin-bottom: 10px;
+}
+
+.containerFinance {
+    background-color: var(--main-color);
+    height: 800px;
+    margin-top: 5vh;
+}
+
+.logoFinance {
+    margin-top: 5vh !important;
+}
+
+.containerFinance h1 {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 60px;
+}
+
+.containerFinance p {
+    text-align: center;
+    margin-top: 3vh;
+}
+
+.custom-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerExperience {
+    padding-top: 60px;
+}
+
+.titleExperience {
+    color: var(--main-color) !important; /* Changez la couleur selon vos préférences */
+    text-align: center;
+    font-size: 60px;
+}
+
+.textExperience {
+    text-align: center;
+    margin: 8vh auto;
+    font-size: x-large;
+}
+
+.textComment {
+    color: var(--main-color);
+    padding-top: 70px;
+    padding-bottom: 70px;
+    font-size: 60px;
+}
+
+.nameCarousselHomepage {
+    color: var(--main-color);
+    margin-top: 40px;
+
+}
+
+.textEnjoy {
+    margin-top: 60px;
+    font-size: x-large;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+
+.containerActualityHome {
+    margin-top: 80px;
+}
+
+.h1ColorActualityHome {
+    color: var(--main-color);
+    margin-bottom: 50px;
+}
+
+.cardActuality {
+    padding-bottom: 40px;
+}
+
+.bodyActuality {
+    background-color: var(--banner-secondary);
+}
+
+.titleCardActuality {
+    color: white;
+}
+
+.ActualityButton {
+    background-color: var(--main-color);
+}
+
+.lastSectionHome {
+    margin-bottom: 100px;
+}
+
+.colorCard {
+    border: 2 px solid var(--main-color);
+    margin-bottom: 20px;
+}
+/* Specific CSS for Regulation */
+.textDecoration {
+    text-decoration: underline;
+}
+
+/* Specific CSS for Philosophy */
+.introPhilosophy {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.containerSlideComment{
+    background-color: var(--banner-secondary);
+}
+/* Specific CSS for Contact */
+.contact-feature {
+    border: 2px solid black;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    padding: 20px;
+    border-radius: 5%;
+}
+
+.contact-feature h5 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.cardMail {
+    margin-top: 150px;
+}
+
+iframe {
+    margin-top: 60px;
+    width: 100%;
+}
+
+.containerMail {
+    background-color: var(--main-color);
+    border-radius: 5px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Specific CSS for Team */
+.cardTeamWidth {
+    width: 300px;
+    height: 500px;
+    border: 3px solid var(--main-color)
+}
+
+.cardTeamImage {
+    width: 100%;
+    height: 50%;
+}
+
+.cardTeamBody {
+    background-color: var(--banner-secondary);
+}
+
+.cardTeamName {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    border: 2px solid var(--main-color);
+}
+
+.cardTeamFonction {
+    font-style: initial;
+    text-align: center;
+}
+.cardTeamDescription {
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    border-left: 4px solid var(--main-color);
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+/* Specific CSS for Agencies */
+.containerAgenciesMulhouse {
+    background-color: var(--banner-secondary);
+    margin-top: 200px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.containerTitleAgency {
+    color: var(--main-color);
+}
+
+.rowCard {
+    margin-top: 80px;
+}
+
+.cardAgencies{
+    margin-bottom: 40px;
+}
+.cardAgency {
+    background-color: black;
+}
+
+.cardH1Agency {
+    color: white;
+}
+
+.cardPAgency {
+    margin-top: 25px;
+}
+
+.schedule {
+    list-style-type: none;
+    padding: 0;
+}
+
+.schedule li {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.day {
+    display: inline-block;
+    width: 120px;
+}
+
+/* Specific CSS for Gateway */
+.containerPriceGateway{
+    margin-top: 100px;
+    background-color: var(--banner-secondary);
+    padding: 80px 80px;
+}
+
+.secondContainerGateway {
+    margin-top: 60px;
+}
+
+.ulWhite li {
+    color: white;
+}
+
+.titleFeeGateway{
+    color: var(--main-color);
+}
+
+/* Specific CSS for Perfectionnement */
+.containerPricePerfectionnement{
+    margin-top: 100px;
+    background-color: var(--banner-secondary);
+    padding: 80px 80px;
+}
+
+.tablePerfectionnement{
+    margin-top: 25px;
+    height: 250px;
+}
+
+.secondContainerPerfectionnement {
+    margin-top: 60px;
+}
+
+.titlePerfectionnement{
+    color: var(--main-color);
+}
+
+.h4ColorPerfectionnement {
+    color: var(--main-color);
+}
+
+/* Specific CSS for LicenceB */
+.containerPriceLicenceB {
+    margin-top: 50px;
+    background-color: var(--banner-secondary);
+    padding: 80px 80px;
+}
+.tableLicenceB {
+    margin-top: 25px;
+}
+
+.titleFeeLicenceB{
+    color: var(--main-color);
+}
+
+.secondContainerLicenceB {
+    margin-top: 60px;
+    margin-bottom: 120px;
+}
+
+/* Specific CSS for LicenceBEA */
+.containerPriceLicenceBEA {
+    margin-top: 50px;
+    background-color: var(--banner-secondary);
+    padding: 80px 80px;
+}
+.tableLicenceBEA {
+    margin-top: 25px;
+}
+
+.titleFeeLicenceBEA {
+    color: var(--main-color);
+}
+
+.secondContainerLicenceBEA {
+    margin-top: 60px;
+    margin-bottom: 120px;
+}
+
+/* Specific CSS for LicenceAAC */
+.decorationLicenceAAC {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.containerPriceLicenceAAC {
+    margin-top: 50px;
+    background-color: var(--banner-secondary);
+    padding: 80px 80px;
+}
+.tableLicenceAAC {
+    margin-top: 25px;
+}
+
+.titleFeeLicenceAAC {
+    color: var(--main-color);
+}
+
+.secondContainerLicenceAAC {
+    margin-top: 60px;
+    margin-bottom: 120px;
+}
+
+/* Specific CSS for LicenceBSUP */
+.h4LicenceBSUP {
+    text-decoration: underline;
+}
+
+.PChoice {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.containerPriceLicenceBSUP {
+    margin-top: 50px;
+    background-color: var(--banner-secondary);
+    padding: 80px 80px;
+}
+.tableLicenceBSUP {
+    margin-top: 25px;
+}
+
+.titleFeeLicenceBSUP {
+    color: var(--main-color);
+}
+
+.secondContainerLicenceBSUP {
+    margin-top: 60px;
+    margin-bottom: 120px;
+}
+
+/* Specific CSS for Actuality */
+.dateActuality {
+    color: darkgrey;
+}
+
+.colorContainer {
+    color: white;
+}
+
+/* Specific banners */
+.bannerPhilosophy,
+.bannerAdministration,
+.bannerLabel,
+.bannerEval,
+.bannerIssues,
+.bannerRegulation,
+.bannerFormation,
+.bannerEuro,
+.bannerPersonnel,
+.bannerContact,
+.bannerTeam,
+.bannerAgencies,
+.bannerGateway,
+.bannerPerfectionnement,
+.bannerLicenceB,
+.bannerLicenceBEA,
+.bannerLicenceAAC,
+.bannerLicenceBSUP,
+.bannerActuality,
+.bannereExperience {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.bannerPhilosophy {
+    background-image: url("/public/assets/images/bannerPhilosophy.jpg");
+}
+
+.bannerAdministration {
+    background-image: url("/public/assets/images/bannerAdministration.jpg");
+}
+
+.bannerLabel {
+    background-image: url("/public/assets/images/bannerLabel.jpg");
+}
+
+.bannerEval {
+    background-image: url("/public/assets/images/bannerEval.jpg");
+}
+
+.bannerIssues {
+    background-image: url("/public/assets/images/bannerIssues.jpg");
+}
+
+.bannerRegulation {
+    background-image: url("/public/assets/images/bannerRegulation.jpg");
+}
+
+.bannerFormation {
+    background-image: url("/public/assets/images/bannerFormation.jpg");
+}
+
+.bannerEuro {
+    background-image: url("/public/assets/images/bannerEuro.jpg");
+}
+
+.bannerContact {
+    background-image: url("/public/assets/images/bannerContact.jpg");
+}
+
+.bannerPersonnel {
+    background-image: url("/public/assets/images/bannerPersonnel.jpg");
+}
+
+.bannerTeam {
+    background-image: url("/public/assets/images/bannerTeam.jpg");
+}
+
+.bannerAgencies{
+    background-image: url("/public/assets/images/bannerAgencies.jpg");
+}
+
+.bannerGateway{
+    background-image: url("/public/assets/images/bannerGateway.jpg");
+}
+
+.bannerPerfectionnement {
+    background-image: url("/public/assets/images/bannerPerfectionnement.jpg");
+}
+
+.bannerLicenceB {
+    background-image: url("/public/assets/images/bannerLicenceB.jpg");
+}
+
+.bannerLicenceBEA {
+    background-image: url("/public/assets/images/bannerLicenceBEA.jpg");
+}
+
+.bannerLicenceAAC {
+    background-image: url("/public/assets/images/bannerLicenceAAC.jpg");
+}
+
+.bannerLicenceBSUP {
+    background-image: url("/public/assets/images/bannerLicenceBSUP.jpg");
+}
+
+.bannerActuality {
+    background-image: url("/public/assets/images/bannerActuality.jpg");
+}
+
+.bannereExperience {
+    height: 400px;
+    background-image: url("/public/assets/images/bannerExperience.jpg");
+}
+
+/* Media Queries */
+@media (max-width: 1280px) {
+    .bannerPhilosophy,
+    .bannerAdministration,
+    .bannerLabel,
+    .bannerEval,
+    .bannerIssues,
+    .bannerRegulation,
+    .bannerFormation,
+    .bannerEuro,
+    .bannerPersonnel,
+    .bannerTeam,
+    .bannerAgencies,
+    .bannerGateway,
+    .bannerPerfectionnement,
+    .bannerLicenceB,
+    .bannerLicenceBEA,
+    .bannerLicenceAAC,
+    .bannerLicenceBSUP,
+    .bannerActuality,
+    .bannerContact {
+        display: none;
+    }
+    section {
+        margin-top: 30px;
+    }
+    .containerCard {
+        margin-top: 100px;
+    }
+    .containerDirectionHome p {
+        text-align: center;
+        margin-top: 100px;
+    }
+    .carouselSlide {
+        margin-top: 60px;
+    }
+    .sectionTeam .containerFullTeam .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sectionTeam .containerFullTeam .container .row.justify-content-center {
+        flex-direction: column;
+    }
+}

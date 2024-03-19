@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Notre philosophie!{% endblock %}
+
+{% block body %}
+    <div class="bannerPhilosophy"> </div>
+
+    <section>
+        <div class="containerPhilosophy container text-start">
+            <div class="containerDirectionHome container text-start mt-3">
+                <p><a href="{{ path('app_homepage_index') }}">Accueil</a> > Philosophie </p>
+            </div>
+            <hr class="firstHr mb-5 mt-5">
+            <h1 class="h1Color mb-5">Un environnement joyeux favorise l'apprentissage!</h1>
+            <p class="mb-5">Nous transformons les défis en opportunités enrichissantes, où chaque moment partagé est une nouvelle aventure. Notre énergie vitale ? La positivité et la joie de vivre !</p>
+            <hr class="hrH1">
+            <h1 class="h1Color mb-5">Le succès est encore plus gratifiant lorsqu'il est partagé</h1>
+            <p class="mb-5">Chez Performance, nous allons au-delà de la simple amabilité. Chaque élève bénéficie d'un suivi personnalisé avec plusieurs monitrices dédié(e). Leurs rôles consistent à préparer, encourager et motiver les élèves, garantissant ainsi leur persévérance. Les moments de joie partagés sont rapidement récompensés par la réussite.</p>
+            <hr class="hrH1">
+            <h1 class="h1Color mb-5">Des résultats tangibles!</h1>
+            <p class="mb-5">Année après année, nous obtenons pusieurs centaines de permis avec succès, dépassant largement les taux de réussite moyens nationaux grâce à nos élèves exceptionnels !</p>
+            <hr class="hrH1">
+            <h1 class="h1Color mb-5">Le guide pratique vers le succès</h1>
+            <p class="introPhilosophy mb-3">Vous souhaitez obtenir rapidement votre permis ? Excellente décision ! La motivation est votre meilleure alliée.</p>
+            <p>- Lors de ton inscription, tu passeras un test psychopédagogique afin d'évaluer le nombre de leçons nécessaires pour ta formation.</p>
+            <p>- Pendant 3 semaines, tu apprendras le code. Tu pourras aussi compléter et te tester en ligne, sans limite de temps.</p>
+            <p>- Tu commenceras rapidement à rouler avec tes monitrices.</p>
+            <p>- Lorsqu'une monitrice estimera que tu es prêt(e), tu passeras l'exemanen de conduite!</p>
+            <p>- Il faut généralement de 2 à 4 mois depuis ton inscription jusqu'à l'obtention du permis. La durée peut varier en fonction de tes capacités et de tes disponibilités</p>
+            <p class="pEnding">- Avec notre atelier de vérifications, impossible de rater les questions techniques du permis!</p>
+        </div>
+    </section>
+{% endblock %}

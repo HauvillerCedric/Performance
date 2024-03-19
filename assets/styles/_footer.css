@@ -1,0 +1,40 @@
+.containerFooter{
+    margin-top: 30px;
+}
+
+.logoFooter {
+    background-color:#d31292 ;
+}
+
+.col h5 {
+    color: white;
+}
+
+.col ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.col ul li {
+    color: white;
+}
+
+hr {
+    border-color: white;
+    width: 40px;
+}
+
+p {
+    color:white;
+}
+
+.social-icon {
+    color: #d31292;
+}
+
+.liFooter {
+    color: white;
+    text-decoration: none;
+}
+
+

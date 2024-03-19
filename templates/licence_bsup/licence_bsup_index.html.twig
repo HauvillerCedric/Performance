@@ -1,0 +1,225 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}La conduite supervisée{% endblock %}
+
+{% block body %}
+    <div class="bannerLicenceBSUP"></div>
+    <section>
+        <div class="containerLicenceBSUP container text-start">
+            <div class="containerDirectionHome container text-start mt-3">
+                <p><a href="{{ path('app_homepage_index') }}">Accueil</a> > La conduite supervisée </p>
+            </div>
+            <hr class="firstHr mb-5 mt-5">
+            <h1 class="h1Color">Le Permis BSUP (supervisée)</h1>
+            <p>La conduite supervisée offre aux jeunes conducteurs âgés d'au moins 18 ans la possibilité de conduire sous la supervision d'un accompagnateur, que ce soit avant de passer l'épreuve pratique du permis de conduire ou après un échec à cette épreuve. Cette approche de formation peut se révéler particulièrement avantageuse pour les apprenants qui ont rencontré des obstacles au début de leur apprentissage.</p>
+            <hr class="hrH1 mb-5">
+            <h1 class="h1Color">Faire le choix de la conduite supervisée</h1>
+            <p>Deux choix possibles:</p>
+            <ul class="ulWhite">
+                <li>Lors de la conclusion du contrat, pendant l'inscription à l'auto-école.</li>
+                <li>À la conclusion d'un programme de formation initiale en conduite automobile ou suite à une expérience infructueuse lors de l'évaluation pratique pour l'obtention du permis de conduire.</li>
+            </ul>
+            <hr class="hrH1 mb-5">
+            <h1 class="h1Color">Pourquoi choisir la conduite supervisée?</h1>
+            <p>La conduit esupervisée représente un mode d'apprentissage privilégié en raison des nombreux avantages qu'elle offre:</p>
+            <ul class="ulWhite">
+                <li>Acquérir davantage de confiance et d'expérience avant de se présenter à l'examen.</li>
+                <li>Une opportunité de formation en conduite à un coût abordable pour enrichir son apprentissage initial.</li>
+                <li>Améliorer ses chances de succès lors de l'épreuve du permis de conduire.</li>
+            </ul>
+            <hr class="hrH1 mb-5">
+            <h1 class="h1Color">Contenu pédagogique</h1>
+            <div class="accordion" id="accordionExample">
+                <!-- Accordion Item #1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            La formation initiale
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class=" accordionColor accordion-body">
+                            <p>Celle-ci comprend:</p>
+                            <ul class="ulWhite">
+                                <li>La préparation et le passage du code de la route (épreuve théorique générale du permis de conduire) sont des étapes essentielles.</li>
+                                <li>La formation initiale à la conduite comprend une évaluation initiale d'une heure visant à déterminer le volume prévisionnel et personnalisé de la formation de l'élève. Ensuite, l'élève bénéficie d'une formation d'au moins 20 heures sur l'un de nos véhicules écoles, jusqu'à ce que son niveau soit jugé satisfaisant par l'un de nos enseignants. Une fois ce niveau atteint, l'enseignant délivre à l'élève une attestation de fin de formation initiale. Cette attestation confirme que l'élève a acquis le niveau requis pour commencer à conduire avec un accompagnateur, le cas échéant.</li>
+                            </ul>
+                            <p> C'est a cet instant que la phase de conduite supervisée peut demarrer</p>
+                        <h4 class="h4LicenceBSUP">Conditions d’accès à la phase de conduite supervisée</h4>
+                            <p class="PChoice mt-3">Si vous avez fait la demande de conduite supervisée lors de la conclusion du contrat ou en fin de formation initiale.</p>
+                            <p>
+                                Pour accéder à la phase de conduite supervisée, l'élève doit satisfaire aux exigences suivantes :</p>
+                            <ul class="ulWhite">
+                                <li>Avoir réussi avec succès l'épreuve théorique générale du permis de conduire.</li>
+                                <li>Avoir réussi l'évaluation de fin de formation initiale, qui est organisée par l'enseignant.</li>
+                                <li>Après avoir rempli ces deux conditions, l'établissement d'enseignement délivre à l'élève l'attestation de fin de formation initiale conformément au livret d'apprentissage.</li>
+                                <li>Obtenir une approbation écrite préalable de la société d'assurances pour l'extension de garantie requise pour la conduite du ou des véhicules utilisés pendant la phase de conduite supervisée. Cette approbation doit spécifier le nom ou les noms des accompagnateurs autorisés par la société d'assurances à remplir cette fonction. Elle est annexée au contrat de formation de l'élève, lequel énonce les obligations de l'accompagnateur ainsi que les conditions particulières de la conduite supervisée</li>
+                                <li>Participer à une réunion préalable d'une durée de 2 heures avec au moins un accompagnateur, qui est organisée à la suite de l'évaluation de la formation initiale. Cette réunion prend la forme d'une séance de conduite sur le véhicule de l'établissement, pendant laquelle l'accompagnateur, assis à l'arrière du véhicule, bénéficie des conseils de l'enseignant.</li>
+                            </ul>
+                            <p class="PChoice">Si vous avez fait la demande de conduite supervisée suite à un ou plusieurs échecs à l’examen pratique du permis de conduire</p>
+                            <p>Après un ou plusieurs échecs à l'épreuve pratique de l'examen du permis de conduire, l'élève conducteur doit :</p>
+                            <ul class="ulWhite">
+                                <li>Obtenir un accord préalable écrit de la société d'assurances concernant l'extension de garantie nécessaire pour la conduite du ou des véhicules utilisés pendant la phase de conduite supervisée. Cet accord précise le ou les noms des accompagnateurs autorisés par la société d'assurances à remplir cette fonction. Il est inclus dans le contrat de formation de l'élève, qui détaille les responsabilités relatives à la fonction d'accompagnateur ainsi que les conditions spécifiques de la conduite supervisée.</li>
+                                <li>Recevoir une autorisation de conduire en conduite supervisée, dont une copie est transmise dès son émission à la société d'assurances par le souscripteur du contrat de formation. Cette autorisation de conduire en conduite supervisée, prévue dans le livret d'apprentissage, est délivrée par l'enseignant à la suite d'une séance préliminaire de deux heures.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            La phase de conduite supervisée
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordionColor accordion-body">
+                            <p class="PChoice">Le rendez-vous préalable</p>
+                            <p>Cette phase commence par un rendez-vous préalable avec l'accompagnateur, d'une durée minimale de 2 heures, comprenant :</p>
+                            <ul class="ulWhite">
+                                <li>Au moins une heure de conduite sur les voies ouvertes à la circulation, avec l'enseignant assis à l'avant du véhicule aux côtés de l'élève, et l'accompagnateur à l'arrière.</li>
+                                <li>Un bilan personnalisé de la séance.</li>
+                            </ul>
+                            <p>Lors de cette première rencontre entre le candidat, le moniteur et l'accompagnateur, ce dernier bénéficie des conseils et des informations dispensés par l'enseignant de la conduite afin d'assurer une cohérence dans l'apprentissage. À la fin de ce rendez-vous, si le niveau de l'élève est jugé satisfaisant, l'enseignant lui délivre l'attestation de fin de formation initiale, confirmant ainsi qu'il a acquis le niveau requis pour débuter la conduite avec un accompagnateur. C'est à partir de ce moment que débute officiellement la conduite supervisée. Une fois que l'élève a atteint le niveau requis, évalué par l'auto-école, il peut alors envisager de se représenter à l'examen de conduite.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="hrH1 mb-5">
+            <h1 class="h1Color"> Critères pour devenir accompagnateur</h1>
+            <p>Un accompagnateur doit impérativement:</p>
+            <ul class="ulWhite">
+                <li>Détenir le permis de conduire de catégorie B depuis au moins cinq ans sans interruption.</li>
+                <li>Avoir reçu l'accord de son assureur.</li>
+                <li>Ne pas avoir été condamné pour certains délits tels que homicides et blessures involontaires, conduite en état d'ivresse, délit de fuite, etc.</li>
+                <li>Être spécifiquement mentionné dans le contrat conclu avec notre école de conduite.</li>
+                <li>Participer à l'évaluation finale de la formation initiale de l'apprenti conducteur.</li>
+            </ul>
+            <p>L'élève a la possibilité d'avoir plusieurs accompagnateurs, y compris en dehors du cadre familial.</p>
+            <hr class="hrH1 mb-5">
+        </div>
+    </section>
+
+    <section>
+        <div class="containerPriceLicenceBSUP container">
+            <div class="rowFeeLicenceBSUP row">
+                <div class="col-md-6 order-md-1">
+                    <!-- Tableau 1 : Tarifs -->
+                    <table class="tableLicenceBSUP table">
+                        <tbody>
+                        <tr>
+                            <td class="table-danger">Inscription à l'auto-école</td>
+                            <td class="table-danger">{{ licenceBSUP.inscriptionFee }}€</td>
+                        </tr>
+                        <tr>
+                            <td class="table-danger">Forfait code</td>
+                            <td class="table-danger">{{ licenceBSUP.codePackage }}€</td>
+                        </tr>
+                        <tr>
+                            <td class="table-danger">Forfait conduite (pour 20 heures de conduite)</td>
+                            <td class="table-danger">{{ licenceBSUP.driving * 20 }}€</td>
+                        </tr>
+                        <tr>
+                            <td class="table-danger">Livret de conduite</td>
+                            <td class="table-danger">{{ licenceBSUP.book }}€</td>
+                        </tr>
+                        <tr>
+                            <td class="table-danger">Passage de l'examen pratique</td>
+                            <td class="table-danger">{{ licenceBSUP.drivingTest }}€</td>
+                        </tr>
+                        <tr>
+                            <td class="table-danger">Rendez-vous préalable</td>
+                            <td class="table-danger">{{ licenceBSUP.preliminaryMeeting }}€</td>
+                        </tr>
+                        <tr>
+                            <td class="table-danger" colspan="2"><strong>Total du forfait:</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="table-danger text-end" colspan="2"><strong>{{ licenceBSUP.inscriptionFee + licenceBSUP.codePackage + (licenceBSUP.driving * 20) + licenceBSUP.book + licenceBSUP.drivingTest + licenceBSUP.preliminaryMeeting }}€</strong></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <!-- Tableau 2 : Tarif unitaire code -->
+                    <table class="tableLicenceBSUP table">
+                        <tbody>
+                        <tr>
+                            <td class="table-info">Tarif unitaire code:</td>
+                            <td class="table-info"></td>
+                        </tr>
+                        <tr>
+                            <td class="table-info">Livre de code</td>
+                            <td class="table-info">{{ licenceBSUP.codeBook }}€</td>
+                        </tr>
+                        <tr>
+                            <td class="table-info">Passage de l'éxamen théorique</td>
+                            <td class="table-info">{{ licenceBSUP.codeTest }}€</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <!-- Tableau 3 : Tarif unitaire conduite et examen -->
+                    <table class="tableLicenceBSUP table">
+                        <tbody>
+                        <tr>
+                            <td class="table-active">Tarif unitaire conduite et examen:</td>
+                            <td class="table-active"></td>
+                        </tr>
+                        <tr>
+                            <td class="table-active">Heure de conduite</td>
+                            <td class="table-active">{{ licenceBSUP.driving }}€</td>
+                        </tr>
+                        <tr>
+                            <td class="table-active">Livret mécanique</td>
+                            <td class="table-active">{{ licenceBSUP.inspectionsBook }}€</td>
+                        </tr>
+                        <tr>
+                            <td class="table-active">Atelier mécanique</td>
+                            <td class="table-active">{{ licenceBSUP.inspectionWorkshop }}€</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <!-- Tableau 4 : Tarif Unitaire administratif -->
+                    <table class="tableLicenceBSUP table">
+                        <tbody>
+                        <tr>
+                            <td class="table-primary">Tarif Unitaire administratif:</td>
+                            <td class="table-primary"></td>
+                        </tr>
+                        <tr>
+                            <td class="table-primary">Fabrication du permis</td>
+                            <td class="table-primary">{{ licenceBSUP.card }}€</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-6 order-md-2">
+                    <h3 class="titleFeeLicenceBSUP">Tarifs et Conditions de Conduite Accompagnée</h3>
+                    <p>Il est crucial de souligner que le forfait présenté ici est indicatif. Le coût total du permis peut varier selon le parcours de chaque élève. Seuls nos instructeurs sont qualifiés pour déterminer le moment propice pour passer l'examen pratique. Par conséquent, le nombre d'heures de conduite nécessaire peut différer d'une personne à l'autre.</p>
+                    <p>Il convient de noter que la grille tarifaire présentée ici correspond à une conduite supervisée au moment de la signature du contrat avec l'auto-école. Les tarifs peuvent différer en passant d'un contrat B classique à un contrat BSUP. Veuillez vous renseigner auprès de notre équipe pour obtenir des informations précises sur les tarifs applicables à votre situation.</p>
+                    <p>Nous proposons également des facilités de paiement pour vous aider à gérer les dépenses liées à l'obtention de votre permis de conduire. N'hésitez pas à discuter avec notre équipe afin de trouver la solution qui vous convient le mieux.</p>
+                    <p>En outre, nous nous engageons à vous offrir une formation de qualité, en conformité avec les normes en vigueur, afin de vous préparer de manière optimale à l'examen du permis de conduire. Votre réussite est notre priorité absolue.</p>
+                    <p>Il est essentiel de prendre attentivement en considération les conseils et les instructions de votre accompagnateur tout au long de votre formation. Il ou elle possède l'expertise nécessaire pour évaluer vos progrès et vous guider de manière adéquate. En lui faisant confiance et en suivant ses recommandations, vous maximiserez vos chances de réussir l'examen du permis de conduire et vous deviendrez un conducteur plus compétent et plus confiant sur la route.</p>
+                    <p>Enfin, il est crucial pour l'apprenti conducteur de disposer d'un ou plusieurs accompagnateurs engagés durant sa période de conduite accompagnée. Toujours en phase d'apprentissage, il doit développer ses compétences tout en adoptant les bonnes attitudes au volant.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="secondContainerLicenceBSUP container text-start">
+            <h1 class="h1Color">Réglementation a respecter lors de la phase de conduite accompagnée</h1>
+            <p>
+                Pendant la période de conduite accompagnée, il est impératif de respecter un ensemble de règles spécifiques.</p>
+            <ul class="ulWhite">
+                <li>Utiliser un véhicule équipé de deux rétroviseurs latéraux est requis.</li>
+                <li>Ne pas excéder les limitations de vitesse maximales autorisées pour les élèves conducteurs et les jeunes conducteurs, à savoir :</li>
+                <li>110 km/h sur les sections d'autoroutes où la limite normale est de 130 km/h ;</li>
+                <li>100 km/h sur les sections d'autoroutes où cette limite est inférieure, ainsi que sur les routes à deux chaussées séparées par un terre-plein central ;</li>
+                <li>80 km/h sur les autres routes ;</li>
+                <li>50 km/h en agglomération ;</li>
+                <li>Apposer de manière visible, à l'arrière du véhicule, le disque de conduite accompagnée ;</li>
+                <li>Avoir en permanence avec soi lors de la conduite accompagnée le livret d'apprentissage, le cerfa02 (formulaire de demande de permis de conduire) et le document d'extension de garantie de l'assurance. Ces deux derniers documents servent de justificatif en cas de contrôle par les forces de l'ordre ;</li>
+                <li>Rester sur le territoire national.</li>
+            </ul>
+        </div>
+    </section>
+{% endblock %}

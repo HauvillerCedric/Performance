@@ -1,0 +1,55 @@
+{% extends '@!EasyAdmin/page/login.html.twig' %}
+
+{% block wrapper_wrapper %}
+        {% set page_title = block('page_title') %}
+        {% set _username_label = username_label is defined ? username_label|trans : 'login_page.username'|trans({}, 'EasyAdminBundle') %}
+        {% set _password_label = password_label is defined ? password_label|trans : 'login_page.password'|trans({}, 'EasyAdminBundle') %}
+        {% set _forgot_password_label = forgot_password_label is defined ? forgot_password_label|trans : 'login_page.forgot_password'|trans({}, 'EasyAdminBundle') %}
+        {% set _remember_me_label = remember_me_label is defined ? remember_me_label|trans : 'login_page.remember_me'|trans({}, 'EasyAdminBundle') %}
+        {% set _sign_in_label = sign_in_label is defined ? sign_in_label|trans : 'login_page.sign_in'|trans({}, 'EasyAdminBundle') %}
+
+        {% include '@EasyAdmin/flash_messages.html.twig' %}
+
+        <div class="login-wrapper">
+                <header class="main-header">
+                        <div id="header-logo">
+                                {% block header_logo %}
+                                        {% if page_title %}
+                                                <img class="mb-5" src="{{ asset('assets/images/logoPerformance.png') }}" alt="Performance logo">
+                                        {% endif %}
+                                {% endblock header_logo %}
+                        </div>
+                </header>
+
+                <section class="content">
+                        {% if error|default(false) %}
+                                <div class="w-100 alert alert-danger rounded mb-3">
+                                        <i class="fas fa-times-circle mr-1"></i>
+                                        {{ error.messageKey|trans(error.messageData, 'security') }}
+                                </div>
+                        {% endif %}
+
+                        <form method="post" action="{{ path('app_login') }}">
+                                {% if csrf_token_intention|default(false) %}
+                                        <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+                                {% endif %}
+                                <div class="form-group">
+                                        <label for="username">Email</label>
+                                        <input type="email" value="{{ last_username }}" name="_username" id="username" class="form-control" autocomplete="email" required autofocus>
+                                </div>
+                                <div class="form-group">
+                                        <label class="form-control-label required" for="password">{{ _password_label }}</label>
+                                        <input type="password" id="password" name="_password" class="form-control" required autocomplete="current-password">
+                                </div>
+                                {% if forgot_password_enabled|default(false) %}
+                                        <div class="form-text mb-2">
+                                                <a href="{{ forgot_password_path|default('#') }}">{{ _forgot_password_label }}</a>
+                                        </div>
+                                {% endif %}
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">{{ _sign_in_label }}</button>
+                        </form>
+
+                        <script src="{{ asset('login.js', constant('EasyCorp\\Bundle\\EasyAdminBundle\\Asset\\AssetPackage::PACKAGE_NAME')) }}"></script>
+                </section>
+        </div>
+{% endblock %}

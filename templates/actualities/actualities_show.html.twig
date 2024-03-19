@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ actuality.title }}{% endblock %}
+
+
+{% block body %}
+    <div class="bannerActuality"></div>
+
+    <section>
+        <div class="containerActuality container text-start">
+            <div class="containerDirectionHome container text-start mt-3">
+                <p><a href="{{ path('app_homepage_index') }}">Accueil</a> > Actualité </p>
+            </div>
+            <hr class="firstHr mb-5 mt-5">
+            <h1 class="h1Color">{{ actuality.title }}</h1>
+            <p class="dateActuality"> Posté par {{ actuality.user }} le {{ actuality.updatedAt ? actuality.updatedAt|date('d/m/Y') : actuality.createdAt|date('d/m/Y') }} </p>
+        </div>
+    </section>
+
+    <section>
+        <div class="secondContainerActuality container">
+            <div class=" colorContainer clearfix">
+                <img src="{{ vich_uploader_asset(actuality) }}" class="col-md-6 float-md-end mb-3 ms-md-3" alt="Photo of the news">
+                <p class="descriptionActuality">{{ actuality.description|raw }}</p>
+            </div>
+        </div>
+    </section>
+
+
+{% endblock %}

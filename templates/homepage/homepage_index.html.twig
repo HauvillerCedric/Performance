@@ -1,0 +1,249 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Auto-Ecole Performance{% endblock %}
+
+{% block body %}
+
+    <div id="carouselExampleAutoplaying" class="carousel slide d-none d-md-block">
+        <div class="carousel-inner">
+            <div class="carouselSlide carousel-item active">
+                <img src="{{ asset('assets/images/slideHomepage.jpg') }}" class="d-block w-100" alt="Photo of joy">
+            </div>
+            <div class="carouselSlide carousel-item">
+                <img src="{{ asset('assets/images/slideCertf.jpg') }}" class="d-block w-100" alt="Photo with multiples logos">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-md-5 mt-5">
+        <h1 class="textQuestion text-center">Pourquoi choisir l'auto-école Performance?</h1>
+    </div>
+
+    <section class="text-center">
+        <div class="container mt-5">
+            <div class="row justify-content-center align-items-center">
+                <div class=" col-12 col-lg-4 my-3 custom-center" data-aos="fade-right">
+                    <div class="cardSize card text-bg-dark">
+                        <img src="{{ asset('assets/images/programCard.jpeg') }}" class="card-img-top" alt="Photo of driving">
+                        <div class="card-body bg-dark">
+                            <h5 class="card-title text-center">Un programme personnalisé!</h5>
+                            <p class="card-text text-center">
+                                Choissisez votre programme selon votre parcours
+                            </p>
+                            <div class="d-flex justify-content-center mb-3">
+                                <button class="borderButtonColor btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                    En savoir plus
+                                </button>
+                            </div>
+                            <div class="collapse" id="collapseExample">
+                                <div class=" borderCardColor card card-body bg-dark">
+                                    <p class="marginP">L'auto-école Performance propose de nombreuses offres adaptées à vos besoins:</p>
+                                    <ul class="firstcardindex text-start">
+                                        <li>Permis B "boite manuelle".</li>
+                                        <li>Permis BEA "boite auto".</li>
+                                        <li>Conduite accompagnée.</li>
+                                        <li>Passerelle Permis BEA vers B.</li>
+                                        <li>Heures de renforcement.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-12 col-lg-4 my-3 custom-center">
+                    <div class=" cardSize card text-bg-dark">
+                        <img src="{{ asset('assets/images/cbCard.jpg') }}" class="card-img-top" alt="Photo of payment with credit card">
+                        <div class="card-body bg-dark">
+                            <h5 class="card-title text-center">Facilité de paiement</h5>
+                            <p class="card-text text-center">
+                                Nous sommes là pour vous aider
+                            </p>
+                            <div class="d-flex justify-content-center mb-3 custom-center">
+                                <button class="borderButtonColor btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                    En savoir plus
+                                </button>
+                            </div>
+                            <div class="collapse" id="collapseExample">
+                                <div class="borderCardColor card card-body bg-dark">
+                                    <p class="marginP">L'auto-école Performance propose de nombreuses possibilités de paiement :</p>
+                                    <ul class="secondcardindex text-start">
+                                        <li>Carte bancaire.</li>
+                                        <li>Chèque.</li>
+                                        <li>Espèce.</li>
+                                        <li>Permis à 1€.</li>
+                                        <li>CPF.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-12 col-lg-4 my-3 custom-center" data-aos="fade-left">
+                    <div class="cardSize card text-bg-dark">
+                        <img src="{{ asset('assets/images/officeCard.jpg') }}" class="card-img-top" alt="Photo of the agency in Pfastatt">
+                        <div class="card-body bg-dark">
+                            <h5 class="card-title text-center">Une auto-école avec plusieurs agences</h5>
+                            <p class="card-text text-center">
+                               Implantation dans le secteur de Mulhouse
+                            </p>
+                            <div class="d-flex justify-content-center mb-3">
+                                <button class="borderButtonColor btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                    En savoir plus
+                                </button>
+                            </div>
+                            <div class="collapse" id="collapseExample">
+                                <div class=" borderCardColor card card-body bg-dark">
+                                    <p class="marginP">Grâce a la présence de deux agences, l'auto-école Performance est présente:</p>
+                                    <ul class="secondcardindex text-start">
+                                        <li>Dans le secteur Mulhousien, grâce à son agence de Bourtzwiller.</li>
+                                        <li>Dans la périphérie de Mulhouse grâce à son agence de Pfastatt.</li>
+                                        <li>Et encore d'autre possibilité! </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="containerFinance container-fluid">
+        <h1> Comment financer <br> mon permis? </h1>
+        <p>Notre établissement est certifié « École de conduite de qualité » <br>et est reconnu en tant qu'organisme de formation professionnelle agréé « QUALIOPI ». <br>Cette accréditation nous permet d'offrir diverses possibilités de financement pour votre permis de conduire, <br>telles que le soutien financier par un organisme financeur (OPCO), <br>ainsi que des options de financement avantageuses comme le programme permis 1€ par jour ou <br>l'utilisation de votre compte personnel de formation (CPF).</p>
+        <div class="logoFinance row align-items-center justify-content-center text-center mt-5">
+            <div class="col">
+                <img src="{{ asset('assets/images/logoEuroFinance.png') }}" alt="Permis à 1€ logo">
+            </div>
+            <div class="col">
+                <img src="{{ asset('assets/images/logoCPFFinance.png') }}" alt="CPF logo">
+            </div>
+            <div class="col">
+                <img src="{{ asset('assets/images/logoQualiopiFinance.png') }}" alt="Qualiopi logo">
+            </div>
+        </div>
+    </div>
+
+    <div class="containerExperience container-fluid">
+        <div class="row">
+            <div class="col">
+                <h2 class="titleExperience">Fiabilité et expérience : <br> une formation de conduite de qualité</h2>
+                <p class="textExperience">Nous nous engageons à fournir une expérience de conduite sécurisée et enrichissante.<br> Nous disposons d'un parc complet de véhicules, tous régulièrement entretenus pour assurer votre sécurité et votre confort sur la route.<br> De plus, notre équipe est composée d'employés hautement qualifiés et expérimentés, prêts à vous accompagner à chaque étape de votre formation. <br> Nous sommes là pour vous offrir les meilleures conditions pour réussir votre permis de conduire et devenir un conducteur confiant et responsable.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="bannereExperience"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <h2 class="textComment text-center">Ce que vous pensez de nous</h2>
+
+    <div class="containerSlideComment container-fluid">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <h1 class="nameCarousselHomepage text-center">Thibona Gnanadevan</h1>
+                    <div class="text-center">
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    </div>
+                    <p class="textEnjoy text-center">L'Auto école Performance est un excellent choix pour apprendre à conduire. Les monitrices sont professionnelles, patientes et compétentes. L’auto école s’adapte à nos besoins et nous encourage à passer le permis.</p>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <h1 class="nameCarousselHomepage text-center">Chloe Wolfersperger</h1>
+                    <div class="text-center">
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    </div>
+                    <p class="textEnjoy text-center">Une auto école au top ! Les monitrices sont compétentes, patientes et motivantes. Je recommande Performance à tous ceux qui souhaitent passer leur permis avec succès. Un grand merci à toute l'équipe !</p>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <h1 class="nameCarousselHomepage text-center">XaRm</h1>
+                    <div class="text-center">
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    </div>
+                    <p class="textEnjoy text-center">Auto école super ! Les monitrices sont extrêmement pédagogues et nous mettent à l'aise durant nos périodes de conduite ! J'ai eu mon permis du premier coup grâce à leurs conseils. De plus, j'ai eu une date d'examen extrêmement rapidement ce qui n'est pas le cas de toutes les autos écoles.</p>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <h1 class="nameCarousselHomepage text-center">Jordan Kheddar</h1>
+                    <div class="text-center">
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    </div>
+                    <p class="textEnjoy text-center">Super auto école, j’ai obtenu mon permis 30/31.<br> De superbe rencontre merci à Léa, Séverine, Stéphanie, Chim vous êtes au Top et également Merci à Raphaela et Jennifer.</p>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <h1 class="nameCarousselHomepage text-center">Mattia Oliva</h1>
+                    <div class="text-center">
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    </div>
+                    <p class="textEnjoy text-center">Une auto école superbe ! Une très bonne ambiance règne dans l’équipe.<br> Les monitrices sont pédagogues et bienveillantes ce qui m’a permis d’avoir mon permis du premier coup</p>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <h1 class="nameCarousselHomepage text-center">A_bay</h1>
+                    <div class="text-center">
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    </div>
+                    <p class="textEnjoy text-center">Super Auto école qui nous permet de bien se sentir tout en apprenant la conduite. On a bien été guidé au niveau administratif, et également au niveau de l'apprentissage de la conduite. Nous recommandons cette auto-école !</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="lastSectionHome mt-5">
+        <div class="containerActualityHome container text-center">
+            <h1 class="h1ColorActualityHome">Toutes les actualités de l'auto-école Performance</h1>
+            {% if threeActualities is not empty %}
+                <div class="row">
+                    {% for actuality in threeActualities %}
+                        <div class="col-12 col-xl mb-3 d-flex justify-content-center align-items-center ">
+                            <div class="colorCard card" style="width: 18rem;">
+                                <img src="{{ vich_uploader_asset(actuality) }}" class="card-img-top pt-2" style="height: 8rem;" alt="Photo of news">
+                                <div class="bodyActuality card-body">
+                                    <h5 class="titleCardActuality card-title" style="height: 5rem">{{ actuality.title }}</h5>
+                                    <a href="{{ path('app_actualities_show', {'slug': actuality.slug}) }}" class="ActualityButton btn">Voir l'actualité</a>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% else %}
+                <p>Aucune actualité disponible pour le moment.</p>
+            {% endif %}
+        </div>
+    </section>
+
+
+
+
+
+
+
+{% endblock %}

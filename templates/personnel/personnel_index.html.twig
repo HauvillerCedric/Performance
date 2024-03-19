@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Compte Personnel de Formation{% endblock %}
+
+{% block body %}
+    <div class="bannerPersonnel"> </div>
+    <section>
+        <div class="containerPersonnel container text-start">
+            <div class="containerDirectionHome container text-start mt-3">
+                <p><a href="{{ path('app_homepage_index') }}">Accueil</a> > CPF </p>
+            </div>
+            <hr class="firstHr mb-5 mt-5">
+            <h1 class="h1Color">Qu'est ce que c'est?</h1>
+            <img src="{{ asset('assets/images/logoCPFBlack.jpg') }}" class="logoCPFBlack mb-5"  alt="CPF black logo">
+            <p>Le Compte Personnel de Formation (CPF) est accessible à tous les salariés tout au long de leur vie active, y compris pendant les périodes de chômage, afin de suivre des formations qualifiantes ou certifiantes. Le CPF a été instauré en remplacement du Droit Individuel à la Formation (DIF). Les salariés ne perdent pas les heures qu'ils ont accumulées au titre du DIF si celles-ci ont été transférées vers le CPF.</p>
+            <hr class="hrH1 mb-5">
+            <h1 class="h1Color">De quoi parle-t-on exactement ?</h1>
+            <p>Pour accéder au service en ligne, vous pouvez vous connecter en utilisant vos identifiants ou via France Connect. Vous aurez besoin de l'identifiant et du mot de passe d'un des comptes suivants : Impots.gouv, Ameli, lidentitenumerique (laposte), Mobileconnectetmoi.fr ou Alicem.</p>
+            <p>Une fois connecté, vous pouvez accéder au service en ligne en utilisant le lien suivant : <a href="https://www.moncompteformation.gouv.fr/espace-prive/html/#/">Lien vers le service en ligne</a></p>
+            <p>Pour obtenir plus d'informations, vous pouvez cliquer sur ce lien : <a href="https://www.service-public.fr/particuliers/vosdroits/F10705">En savoir plus sur le CPF</a></p>
+            <hr class="hrH1 mb-5">
+            <h1 class="h1Color">Comment peut-on bénéficier de ce programme ?</h1>
+            <p>Compte personnel d’activité (CPA)</p>
+            <p>Une fois votre compte créé en ligne, vous pouvez obtenir des informations sur l’utilisation du site : <a href="https://www.moncompteformation.gouv.fr/espace-public/aide/mon-compte">Site du compte pour la formation</a> </p>
+            <p>vous pouvez vous rendre dans l'une de nos agences situées à Mulhouse ou Pfastatt, où notre équipe se chargera de toutes les démarches nécessaires.</p>
+            <p class="pEnding">Pour consulter nos coordonnées, <strong>cliquez ICI</strong>.</p>
+        </div>
+    </section>
+{% endblock %}

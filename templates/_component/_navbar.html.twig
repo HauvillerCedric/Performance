@@ -1,0 +1,103 @@
+<nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="{{ path('app_homepage_index') }}">
+            <img class="logo" src="{{ asset('assets/images/logoPerformance.png') }}" alt="Performance logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    {% if app.user %}
+                    <li class="nav-item mb-2">
+                        <a href="{{ path('app_admin') }}" class=user-icon">
+                            <i class="fa-solid fa-user fa-lg" style="color: #FFFFFF;"></i>
+                        </a>
+                    </li>
+                    {% else %}
+                    <li class="nav-item mb-2">
+                        <a href="{{ path('app_login') }}" class="user-icon-connect">
+                            <i class="fa-solid fa-user fa-lg" style="color: #FFFFFF;"></i>
+                        </a>
+                    </li>
+                    {% endif %}
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{{ path('app_homepage_index') }}">Acceuil</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Chez Performance
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="{{ path('app_philosophy_index') }}">Philosophie</a></li>
+                            <li><a class="dropdown-item" href="{{ path('app_team_index') }}">Notre Equipe </a></li>
+                            <li><a class="dropdown-item" href="{{ path('app_agencies_index') }}">Nos agences</a> </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Nos prestations
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="{{ path('app_licence_b_index') }}">Permis B</a></li>
+                            <li><a class="dropdown-item" href="{{ path('app_licence_bea_index') }}">Permis boite auto</a></li>
+                            <li><a class="dropdown-item" href="{{ path('app_licence_aac_index') }}">Conduite accompagnée</a></li>
+                            <li><a class="dropdown-item" href="{{ path('app_licence_bsup_index') }}">Conduite supervisée</a></li>
+                            <li><a class="dropdown-item" href="{{ path('app_perfectionnement_index') }}">Perfectionnement</a></li>
+                            <li><a class="dropdown-item" href="{{ path('app_gateway_index') }}">Passerelle vers permis B</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{{ path('app_groupe_index') }}">Formalités administratives</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Label
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="{{ path('app_label_index') }}">Le label qualité</a></li>
+                            <li><a class="dropdown-item" href="{{ path('app_evaluation_index') }}">Evaluation de départ</a></li>
+                            <li><a class="dropdown-item" href="{{ path('app_issues_formation_index') }}">Enjeux et déroulement de la formation</a></li>
+                            <li><a class="dropdown-item" href="{{ path('app_regulation_index') }}">Règlement intérieur</a></li>
+                            <li><a class="dropdown-item" href="{{ path('app_formation_index') }}">Parcours de formation</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Financement
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="{{ path('app_euro_index') }}">Permis à 1€</a></li>
+                            <li><a class="dropdown-item" href="{{ path('app_personnel_index') }}">CPF</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{{ path('app_contact_index') }}">Contact</a>
+                    </li>
+                    <li class="icons">
+                        <a href="https://fr-fr.facebook.com/AutoEcolePerformance68/" target="_blank" class="social-icon">
+                            <i class="fa-brands fa-facebook fa-2xl"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@autoecoleperformance/" target="_blank" class="social-icon">
+                            <i class="fa-brands fa-tiktok fa-2xl"></i>
+                        </a>
+                        <a href="https://www.instagram.com/auto.ecoleperformance?igsh=MTJ4ZmZjNTlzNGpxNA==" target="_blank" class="social-icon">
+                            <i class="fa-brands fa-instagram fa-2xl"></i>
+                        </a>
+                        <a href="tel:+33 (0)389328909" class="social-icon">
+                            <i class="fa-solid fa-phone fa-2x"></i>
+                        </a>
+                        <a href="mailto:aeperformance68@gmail.com" class="social-icon">
+                            <i class="fa-solid fa-at fa-2xl"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>

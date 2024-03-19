@@ -1,0 +1,349 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Réglement intérieur{% endblock %}
+
+{% block body %}
+    <div class="bannerRegulation"> </div>
+    <section>
+        <div class="containerRegulation container text-start mb-5">
+            <div class="containerDirectionHome container text-start mt-3">
+                <p><a href="{{ path('app_homepage_index') }}">Accueil</a> > Réglement intérieur </p>
+            </div>
+            <hr class="firstHr mb-5 mt-5">
+            <p class="titleExplain">Ce règlement a pour objectif de définir les règles relatives à l’hygiène, à la sécurité ainsi qu’à la discipline nécessaire au bon fonctionnement de l’établissement.</p>
+            <p class="titleExplain">Ce règlement est applicable par l’ensemble des élèves ou stagiaires</p>
+            <hr class="hrH1 mb-5">
+
+            <div class="accordion" id="accordionExample">
+                <!-- Accordion Item #1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Article 1 : Règles d’hygiène et de sécurité
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class=" accordionColor accordion-body">
+                            <p>Sur les lieux de formation et à bord des véhicules destinés à l’enseignement, l’élève doit se conformer aux instructions particulières données par les formateurs en ce qui concerne les règles de sécurité.</p>
+                            <p>Sur les lieux de formation et à bord des véhicules destinés à l’enseignement, l’élève doit respecter les normes élémentaires d’hygiène.</p>
+                            <p>Sont particulièrement visés : l’interdiction de vapoter, fumer, cracher, de se restaurer ou de jeter des détritus, l’hygiène corporelle et la nécessité de signaler à l’établissement tout risque de contagion en cas de maladie.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accordion Item #2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Article 2 : Consignes de sécurité
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordionColor accordion-body">
+                            <p>En cas d’incendie l’élève doit se référer aux consignes affichées. Tous les élèves sont tenus d’en prendre connaissance et de participer aux exercices d’évacuation lorsqu’ils sont organisés.</p>
+                            <p>D’une manière générale, en cas d’incendie ou d’ordre d’évacuation des locaux, chacun se conformera aux directives qui seront données par le responsable désigné.</p>
+                            <p>Il est interdit d’introduire, de distribuer ou de consommer des stupéfiants ou de l’alcool sur les lieux de formation et à bord des véhicules destinés à l’enseignement.</p>
+                            <p>Il est également interdit de pénétrer ou demeurer sur les lieux de formation et à bord des véhicules destinés à l’enseignement sous l’emprise de stupéfiants ou d’alcool.</p>
+                            <p>Il est également interdit de fumer, vapoter sur les lieux de formation et à bord des véhicules destinés à l’enseignement.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accordion Item #3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Article 3 : Accès aux locaux
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordionColor accordion-body">
+                            <p>Horaires et jours d’ouverture ordinaires de l’établissement* : </p>
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Lundi</th>
+                                    <th scope="col">Mardi</th>
+                                    <th scope="col">Mercredi</th>
+                                    <th scope="col">Jeudi</th>
+                                    <th scope="col">Vendredi</th>
+                                    <th scope="col">Samedi</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">Formation théorique</th>
+                                    <td></td>
+                                    <td>16h15-19h</td>
+                                    <td>16h15-18h</td>
+                                    <td>16h15-19h</td>
+                                    <td></td>
+                                    <td>10h-12h</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Cours thématiques</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td>18h-20h</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Cours pratiques</th>
+                                    <td>8h-19h</td>
+                                    <td>8h-19h</td>
+                                    <td>8h-19h</td>
+                                    <td>8h-19h</td>
+                                    <td>8h-20h</td>
+                                    <td>8h-14h</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <p>* En cas de modifications : affichage des horaires exceptionnels dans l’établissement ou sur tout autre support accessible.</p>
+                            <br/>
+                            <p>Conditions d’accès :</p>
+                            <p>L’accès en salle de code est libre aux horaires d’ouverture et en début de séance.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accordion Item #4 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Article 4 : Organisation des cours théoriques et pratiques
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordionColor accordion-body">
+                            <p class="textDecoration">Entraînements au code :</p>
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Lundi</th>
+                                    <th scope="col">Mardi</th>
+                                    <th scope="col">Mercredi</th>
+                                    <th scope="col">Jeudi</th>
+                                    <th scope="col">Vendredi</th>
+                                    <th scope="col">Samedi</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">Tests d'entraînement au code</th>
+                                    <td></td>
+                                    <td>16h15-19h</td>
+                                    <td>16h15-18h</td>
+                                    <td>16h-19h</td>
+                                    <td></td>
+                                    <td>10h-12h</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <p>L’accès à tout dispositif d’entraînement au code ainsi que son utilisation (tests, tout dispositif d’entraînement au code présent dans l’établissement ou accessible à distance ainsi que les supports de recueil des réponses) est régit par les conditions particulières d’accès définies dans le contrat de formation ou à l’initiative du personnel de l’établissement.</p>
+                            <br>
+                            <p class="textDecoration">Cours théoriques : </p>
+                            <p>Les cours seront dispensés, dans les locaux de l’école de conduite, par un enseignant de la conduite et de la sécurité routière titulaire d’une autorisation d’enseigner en cours de validité. </p>
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Lundi</th>
+                                    <th scope="col">Mardi</th>
+                                    <th scope="col">Mercredi</th>
+                                    <th scope="col">Jeudi</th>
+                                    <th scope="col">Vendredi</th>
+                                    <th scope="col">Samedi</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">Horaires des cours théoriques</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td>18h-20h</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <p>Les thématiques traitées sont les suivantes :</p>
+                            <ul>
+                                <li>les effets dus à la consommation d’alcool, de drogues et de médicaments sur la conduite ;</li>
+                                <li>’influence de la fatigue sur la conduite ;</li>
+                                <li>les risques liés aux conditions météorologiques aux états de la chaussée ;</li>
+                                <li>les usagers vulnérables ;</li>
+                                <li>Alcool et stupéfiants, vitesse, défaut de port de la ceinture de sécurité …</li>
+                            </ul>
+                            <br>
+                            <p class="textDecoration">Cours pratiques :</p>
+                            <p>Le contrat de formation est conclu après une évaluation de départ dont les modalités de réalisation sont disponibles dans les locaux de l’établissement.</p>
+                            <p>Chaque élève se voit attribuer un livret d’apprentissage qu’il devra renseigner au fur et à mesure de sa progression avec l’assistance du formateur.</p>
+                            <p>Modalités de réservation et d’annulation des leçons de conduite du fait de l’élève :</p>
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Moyens</th>
+                                    <th scope="col">Délais</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">Réservation des leçons de conduite</th>
+                                    <td>Au secrétariat, aux horaires d’ouverture du bureau</td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <br>
+
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Moyens</th>
+                                    <th scope="col">Délais</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">Annulation des leçons de conduite </th>
+                                    <td>Auprès du secrétariat aux horaires d’ouverture du bureau, par téléphone, Mail, sms </td>
+                                    <td>48h ouvrables avant la séance (sauf cas de force majeure ou motif légitime dûment justifié à l’école de conduite</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <p>Modalités d’annulation des leçons de conduite du fait de l’établissement :</p>
+                            <p>Sauf cas de force majeure ou motif légitime dûment justifié à l’élève, l’école de conduite s’engage à n’annuler aucune leçon moins de 48h à l’avance.</p>
+                            <p>Les leçons de conduite sont d’une durée maximale de 2 h, elles peuvent se dérouler de manière individuelle ou en séance collective.</p>
+                            <p>L’interruption entre deux leçons consécutives doit être au minimum équivalente à la durée de la leçon précédente.</p>
+                            <br>
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Moyens</th>
+                                    <th scope="col">Délais</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">Retard de l'élève</th>
+                                    <td>Prendre contact auprès du secrétariat dans les horaires affichés dans l’établissement ; Auprès du formateur ; Par : tel, sms, mail, </td>
+                                    <td>Dès que possible</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <br>
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Moyens</th>
+                                    <th scope="col">Délais</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">Retard du formateur</th>
+                                    <td>tel, sms, mail</td>
+                                    <td>Dès que possible</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accordion Item #5 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Article 5 : Tenue vestimentaire exigée pour les cours pratiques
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordionColor accordion-body">
+                            <p>Pour la formation à la catégorie B : chaussures adaptées (talons haut et tongs interdits), vêtements permettant une aisance de mouvement et ne gênant pas la prise d’information en conformité avec les prescriptions du code de la route (article R412-6).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accordion Item #6 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            Article 6 : Utilisation du matériel pédagogique
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordionColor accordion-body">
+                            <p>L’utilisation du matériel pédagogique est exclusivement réservée à l’activité de formation et uniquement sur les lieux de formation.</p>
+                            <p>L’élève s’engage à conserver en bon état le matériel qui lui est confié et à signaler toute anomalie détectée au personnel de l’établissement.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accordion Item #7 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                            Article 7 : Assiduité des stagiaires
+                        </button>
+                    </h2>
+                    <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordionColor accordion-body">
+                            <p>L’élève stagiaire s’engage au respect des horaires de formation fixés par l’école de conduite.</p>
+                            <p>En cas d’absences ou de retards, les modalités précisées à l’article 4 du présent règlement s’appliquent.</p>
+                            <p>Au cas échéant l’établissement se réserve la possibilité de rendre compte de l’assiduité de l’élève stagiaire aux tiers tels que définis dans le contrat de formation.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accordion Item #8 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                            Article 8 : Comportement des stagiaires
+                        </button>
+                    </h2>
+                    <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordionColor accordion-body">
+                            <p>Tout comportement visant au non-respect des règles élémentaires de savoir-vivre, de savoir-être en collectivité et au bon déroulement des formations est proscrit sur les lieux de formation, à bord des véhicules destinés à l’enseignement en leçon de conduite et lors des examens pratiques.</p>
+                            <p>Sont particulièrement visés les comportements à caractère agressif, violent, homophobe, sexiste, raciste.</p>
+                            <p>Ces règles élémentaires sont également applicables au personnel enseignant ou administratif, aux autres élèves ou toute personne présente sur les lieux de formation, à bord des véhicules destinés à l’enseignement en leçon de conduite et lors des examens pratiques.</p>
+                            <p>Toute tentative de propagande autant religieuse que politique ou syndicale est proscrite sur les lieux de formation, ou à bord des véhicules destinés à l’enseignement en leçon de conduite.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accordion Item #9 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                            Article 9 : Sanctions disciplinaires
+                        </button>
+                    </h2>
+                    <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordionColor accordion-body">
+                            <p>les sanctions applicables sont:</p>
+                            <ul>
+                                <li>L’avertissement oral qui précise les motifs de plainte et avertit des suites possibles en cas de maintien du comportement ;</li>
+                                <li>l’avertissement écrit qui précise les motifs de plainte faisant suite à l’avertissement oral et rappelle  les suites possibles en cas de maintien du comportement ;</li>
+                                <li>la suspension provisoire faisant à suite l’avertissement écrit qui précise la durée de la suspension, les conditions de retour en formation et les suites possibles en cas de maintien du comportement;</li>
+                                <li>l’exclusion définitive faisant à suite à la suspension. </li>
+                            </ul>
+                            <p>Au cas échéant l’établissement se réserve la possibilité de rendre compte des sanctions disciplinaires prise à l’encontre de l’élève stagiaire aux tiers tels que définis dans le contrat de formation.</p>
+                            <p>En cas de contestation des mesures prises par l’établissement, l’élève peut saisir le médiateur de la consommation dont relève l’établissement.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Pièces à fournir{% endblock %}
+
+{% block body %}
+    <div class="bannerAdministration"> </div>
+    <section>
+        <div class="containerAdministration container text-start">
+            <div class="containerDirectionHome container text-start mt-3">
+                <p><a href="{{ path('app_homepage_index') }}">Accueil</a> > Formailités administratives </p>
+            </div>
+            <hr class="firstHr mb-5 mt-5">
+            <p class="mb-5">Vous voulez passer votre permis ? L’auto-école Performance est là pour ça ! Mais avant de venir nous voir dans l’une de nos deux agences à Pfastatt et Mulhouse, pensez à vous munir des pièces justificatives nécessaires à votre dossier, pour gagner un peu de temps !</p>
+            <h1 class="h1Color">Ephoto : photo d’identité digitale pour permis de conduire</h1>
+            <hr class="hrH1 mb-5">
+            <p class="mb-5">Les démarches se modernisent et il est aujourd’hui nécessaire de réaliser sa demande de permis de conduire en ligne. Si vous vous rendez dans un Photomaton® proche de chez vous, vous aurez accès à la version ephoto de votre planche de 4 photos d’identité. C’est sur cette planche que vous trouverez un numéro ephoto unique, que vous devrez communiquer à votre auto-école afin d’effectuer la demande en ligne de permis de conduire.</p>
+            <h1 class="h1Color">Pièces à fournir lors de votre inscription</h1>
+            <hr class="hrH1 mb-5">
+            <ul class="align-item-center mb-5">
+                <li class="liColor">2 photos d’identité (e-photo conforme Permis de conduire);</li>
+                <li class="liColor">Pièce d’identité OU Passeport ;</li>
+                <li class="liColor">ASSR2 ;</li>
+                <li class="liColor">Attestation de la participation à la Journée d’Appel à la Défense ;</li>
+                <li class="liColor">Justificatif de domicile</li>
+                <li class="liColor">Le livret de famille (si mineur à l’inscription).</li>
+            </ul>
+            <h1 class="h1Color">Inscrivez-vous à l’auto-école Performance dans le Haut-Rhin !</h1>
+            <hr class="hrH1 mb-5">
+            <p class="pEnding">Maintenant que vous avez pris connaissance des différentes pièces justificatives à fournir, nous pouvons évaluer le nombre d’heures de conduite dont vous avez besoin, réaliser un devis puis signer ensemble un contrat de formation entre les deux parties. Votre devis réunit les tarifs, le contenu de la formation et les modalités de paiement.</p>
+        </div>
+    </section>
+{% endblock %}

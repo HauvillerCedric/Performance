@@ -1,0 +1,93 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contactez-nous{% endblock %}
+
+{% block body %}
+    <div class="bannerContact"> </div>
+    <div class="space">
+        <div class="containerCard container">
+            <div class="containerDirectionHome container text-start mt-3">
+                <p><a href="{{ path('app_homepage_index') }}">Accueil</a> > Contact </p>
+            </div>
+            <hr class="firstHr mb-5 mt-5">
+            <div class="row gy-4 justify-content-center align-items-center">
+                <div class="col-lg-4 col-md-12">
+                    <div class="contact-feature text-center">
+                        <div class="contact-feature_icon">
+                            <i class="fa-solid fa-location-dot fa-2xl mb-4"></i>
+                        </div>
+                        <span class="contact-feature_subtitle">Nous rencontrer</span>
+                        <h5 class="box-title">35 rue de Soultz, 68200 Mulhouse</h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="contact-feature bg-theme text-center">
+                        <div class="contact-feature_icon">
+                            <i class="fa-solid fa-phone fa-2xl mb-4"></i>
+                        </div>
+                        <span class="contact-feature_subtitle">Une question ?</span>
+                        <h5 class="box-title"><a href="tel:0389328909">0389328909</a></h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="contact-feature text-center">
+                        <div class="contact-feature_icon">
+                            <i class="fa-solid fa-at fa-2xl mb-4"></i>
+                        </div>
+                        <div class="contact-feature_content">
+                            <span class="contact-feature_subtitle">Email</span>
+                            <h5 class="box-title"><a href="mailto:aeperformance68@gmail.com">aeperformance68@gmail.com</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section>
+        <div class="contactContainer container-fluid">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2681.758575913453!2d7.322011899999998!3d47.766737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47919b5aa5ec9c5b%3A0x850e23e7d01d87c0!2sAUTO%20ECOLE%20PERFORMANCE!5e0!3m2!1sfr!2sfr!4v1709661464389!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+
+    <section class="mb-5">
+        <div class="containerMail container mt-5">
+            <div class="row">
+                <div class="col-md-4 col-12 text-start">
+                    <h2>Contact</h2>
+                    <p>Nous serions ravis d'entendre parler de vous! Votre opinion, vos questions ou vos commentaires sont précieux pour nous. N'hésitez pas à nous contacter en utilisant le formulaire ci-dessous. Nous nous engageons à répondre dans les plus brefs délais et à vous fournir toute l'assistance dont vous pourriez avoir besoin. Merci de nous donner l'opportunité de mieux vous servir!</p>
+                </div>
+                <div class="col-md-8 col-12">
+                    {{ form_start(form) }}
+                    <div class="row">
+                        <div class="col-md-6 col-12 mb-4">
+                            {{ form_row(form.firstName, {'attr': {'class': 'form-control'}}) }}
+                        </div>
+                        <div class="col-md-6 col-12 mb-4">
+                            {{ form_row(form.lastName, {'attr': {'class': 'form-control'}}) }}
+                        </div>
+                        <div class="col-md-6 col-12 mb-4">
+                            {{ form_row(form.mobile, {'attr': {'class': 'form-control'}}) }}
+                        </div>
+                        <div class="col-md-6 col-12 mb-4">
+                            {{ form_row(form.email, {'attr': {'class': 'form-control'}}) }}
+                        </div>
+                        <div class="col-12 mb-4">
+                            {{ form_row(form.description, {'attr': {'class': 'form-control', 'rows': '4'}}) }}
+                        </div>
+                        <div class="col-12">
+                            {{ form_row(form.submit, {'attr': {'class': 'btn btn-dark'}}) }}
+                        </div>
+                    </div>
+                    {{ form_end(form) }}
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,180 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Le permis boite automatique{% endblock %}
+
+{% block body %}
+    <div class="bannerLicenceBEA"></div>
+
+    <section>
+        <div class="containerLicenceBEA container text-start">
+            <div class="containerDirectionHome container text-start mt-3">
+                <p><a href="{{ path('app_homepage_index') }}">Accueil</a> > Permis Boite auto </p>
+            </div>
+            <hr class="firstHr mb-5 mt-5">
+            <h1 class="h1Color">Le Permis BEA</h1>
+            <p>Nous mettons à disposition un véhicule équipé de transmission automatique. Notre programme de formation pour le permis BEA (permis B à Embrayage Automatique) est conçu pour répondre aux besoins des individus désirant conduire ce type de véhicule. En général, l'apprentissage requiert moins de leçons que pour la transmission manuelle standard, avec un minimum obligatoire de 13 heures de formation.</p>
+            <hr class="hrH1 mb-5">
+            <h1 class="h1Color">Public cible de la formation au permis de conduire avec boîte automatique</h1>
+            <p>Cette formation est ouverte à tous, sous réserve du respect des conditions spécifiques à chaque filière d'apprentissage de la conduite. Ainsi, vous pouvez suivre cette formation :</p>
+            <ul class="ulWhite">
+                <li>À partir de 15 ans dans le cadre de la conduite accompagnée. Tant la formation initiale que la phase de conduite accompagnée s'effectuent sur un véhicule équipé d'une transmission automatique.</li>
+                <li>À partir de 16 ans pour l'inscription à la formation traditionnelle du permis B ou pour la conduite supervisée</li>
+            </ul>
+            <hr class="hrH1 mb-5">
+            <h1 class="h1Color">Description des véhicules inclus dans la catégorie BEA du permis de conduire</h1>
+            <p>La catégorie BEA du permis de conduire inclut tous les véhicules relevant de la catégorie B, équipés d'une transmission automatique.</p>
+            <hr class="hrH1 mb-5">
+            <h1 class="h1Color">Les avantages de la formation "automatique" sont nombreux</h1>
+            <ul class="ulWhite">
+                <li>Libération des contraintes mécaniques : Les élèves sont dispensés des problèmes liés à l'embrayage, au calage et au passage de vitesse, qui sont fréquents lors d'une formation sur un véhicule traditionnel.</li>
+                <li>Concentration accrue : En raison de la simplicité de la transmission automatique, les élèves peuvent se concentrer davantage sur leur environnement, la circulation et les autres usagers de la route.</li>
+                <li>Adaptée aux difficultés mécaniques : Cette option est idéale pour les élèves rencontrant des difficultés mécaniques pendant leur formation ou recherchant un confort de conduite et une sécurité accrue.</li>
+                <li>Durée de formation réduite : En étant dégagée des contraintes mécaniques, la formation est souvent plus courte que la formation traditionnelle.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="containerPriceLicenceBEA container">
+            <div class="rowFeeLicenceBEA row">
+                <div class="col-md-6 order-md-1">
+                    <!-- Tableau 1 : Tarifs -->
+                    <table class="tableLicenceBEA table">
+                        <tbody>
+                        <tr>
+                            <td class="table-danger">Inscription à l'auto-école</td>
+                            <td class="table-danger">{{ licenceBEA.inscriptionFee }}€</td>
+                        </tr>
+                        <tr>
+                            <td class="table-danger">Forfait code</td>
+                            <td class="table-danger">{{ licenceBEA.codePackage }}€</td>
+                        </tr>
+                        <tr>
+                            <td class="table-danger">Forfait conduite (pour 13 heures de conduite)</td>
+                            <td class="table-danger">{{ licenceBEA.driving * 13 }}€</td>
+                        </tr>
+                        <tr>
+                            <td class="table-danger">Livret de conduite</td>
+                            <td class="table-danger">{{ licenceBEA.book }}€</td>
+                        </tr>
+                        <tr>
+                            <td class="table-danger">Passage de l'examen pratique</td>
+                            <td class="table-danger">{{ licenceBEA.drivingTest }}€</td>
+                        </tr>
+                        <tr>
+                            <td class="table-danger" colspan="2"><strong>Total du forfait:</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="table-danger text-end" colspan="2"><strong>{{ licenceBEA.inscriptionFee + licenceBEA.codePackage + (licenceBEA.driving * 13) + licenceBEA.book + licenceBEA.drivingTest }}€</strong></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <!-- Tableau 2 : Tarif unitaire code -->
+                    <table class="tableLicenceBEA table">
+                        <tbody>
+                        <tr>
+                            <td class="table-info">Tarif unitaire code:</td>
+                            <td class="table-info"></td>
+                        </tr>
+                        <tr>
+                            <td class="table-info">Livre de code</td>
+                            <td class="table-info">{{ licenceBEA.codeBook }}€</td>
+                        </tr>
+                        <tr>
+                            <td class="table-info">Passage de l'éxamen théorique</td>
+                            <td class="table-info">{{ licenceBEA.codeTest }}€</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <!-- Tableau 3 : Tarif unitaire conduite et examen -->
+                    <table class="tableLicenceBEA table">
+                        <tbody>
+                        <tr>
+                            <td class="table-active">Tarif unitaire conduite et examen:</td>
+                            <td class="table-active"></td>
+                        </tr>
+                        <tr>
+                            <td class="table-active">Heure de conduite</td>
+                            <td class="table-active">{{ licenceBEA.driving }}€</td>
+                        </tr>
+                        <tr>
+                            <td class="table-active">Livret mécanique</td>
+                            <td class="table-active">{{ licenceBEA.inspectionsBook }}€</td>
+                        </tr>
+                        <tr>
+                            <td class="table-active">Atelier mécanique</td>
+                            <td class="table-active">{{ licenceBEA.inspectionWorkshop }}€</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <!-- Tableau 4 : Tarif Unitaire administratif -->
+                    <table class="tableLicenceBEA table">
+                        <tbody>
+                        <tr>
+                            <td class="table-primary">Tarif Unitaire administratif:</td>
+                            <td class="table-primary"></td>
+                        </tr>
+                        <tr>
+                            <td class="table-primary">Fabrication du permis</td>
+                            <td class="table-primary">{{ licenceBEA.card }}€</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-6 order-md-2">
+                    <h3 class="titleFeeLicenceBEA">Tarifs et Conditions de Conduite</h3>
+                    <p>Il est important de noter que le forfait présenté ici est donné à titre d'exemple. Le prix total du permis peut varier en fonction du parcours de chaque élève. Seules nos monitrices sont habilitées à estimer le moment où l'élève est prêt pour passer l'examen pratique. Le nombre d'heures de conduite nécessaires peut donc être différent pour chaque personne.</p>
+                    <p>Nous offrons également des facilités de paiement pour vous aider à gérer les coûts liés à l'obtention de votre permis de conduire. N'hésitez pas à discuter avec notre équipe pour trouver la solution qui vous convient le mieux.</p>
+                    <p>Enfin, sachez que nous mettons tout en œuvre pour vous offrir une formation de qualité, conforme aux normes en vigueur, et pour vous préparer de manière efficace à l'examen du permis de conduire. Votre réussite est notre priorité absolue.</p>
+                    <p>Il est primordial d'écouter attentivement les conseils et les instructions de votre monitrice de conduite tout au long de votre formation. Elle possède l'expérience nécessaire pour évaluer vos progrès et vous guider de manière appropriée. En lui faisant confiance et en suivant ses conseils, vous augmenterez vos chances de réussite à l'examen du permis de conduire et vous deviendrez un conducteur plus sûr et plus confiant sur la route.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="secondContainerLicenceBEA container text-start">
+            <h1 class="h1Color">La formation au permis boite automatique</h1>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Les conditions:
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class=" accordionColor accordion-body">
+                            <p>"Les conditions à respecter, notamment en ce qui concerne l'âge, sont identiques à celles des filières traditionnelles telles que la formation B, la conduite accompagnée ou la conduite supervisée. Cependant, il est obligatoire que la conduite se fasse exclusivement sur un véhicule équipé d'une transmission automatique.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            La formation
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordionColor accordion-body">
+                            <p>La formation en boîte automatique ne présente aucune spécificité particulière ; en fonction de la filière d’apprentissage que vous aurez choisie, l’épreuve théorique générale (ETG), le volume d’heures de conduite, ainsi que les rendez-vous préalables et pédagogiques le cas échéant, resteront les mêmes et seront soumis aux mêmes conditions que les formations en boîte manuelle.</p>
+                            <p>Les cours de conduite se dérouleront sur notre PEUGEOT 2008 ou l’une de nos PEUGEOT 208 équipées d'une transmission automatique.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            L'examen pratique
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordionColor accordion-body">
+                            <p>L’examen et les conditions pour obtenir le permis de conduire en boîte automatique sont pratiquement identiques à ceux de l’examen du permis de conduire sur boîte manuelle.</p>
+                            <p>Deux différences importantes toutefois : l’examen se déroulera exclusivement sur boîte automatique, et l’élève ayant réussi l’épreuve se verra délivrer un permis de conduire valable uniquement pour la conduite des véhicules de la catégorie B équipés d'une transmission automatique (Permis B restrictif).</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+{% endblock %}

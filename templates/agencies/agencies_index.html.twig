@@ -1,0 +1,66 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nos agences!{% endblock %}
+
+{% block body %}
+    <div class="bannerAgencies"></div>
+    <div class="containerAgencies container text-start">
+        <div class="containerDirectionHome container text-start mt-3">
+            <p><a href="{{ path('app_homepage_index') }}">Accueil</a> > Nos agences </p>
+        </div>
+        <hr class="firstHr mb-5 mt-5">
+        <h1 class="h1Color">Deux agences pour aller deux fois plus vite!</h1>
+        <p>Découvrez les avantages uniques d'avoir deux auto-écoles à votre disposition ! Chez Performance, nous croyons en la flexibilité et en la personnalisation de l'expérience d'apprentissage de la conduite. Avec deux emplacements pratiques, nous offrons à nos élèves le choix, la commodité et la garantie d'une formation de qualité, adaptée à leurs besoins individuels. Explorez nos services dès aujourd'hui et embarquez pour un voyage sécuritaire et enrichissant sur la route !</p>
+    </div>
+
+    <section class="firstSectionAgencies">
+        <div class="containerAgenciesMulhouse container">
+            <h1 class="containerTitleAgency text-center">Retrouvez-nous</h1>
+            <iframe class="iframeMulhouse" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2681.758575913453!2d7.322011899999998!3d47.766737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47919b5aa5ec9c5b%3A0x850e23e7d01d87c0!2sAUTO%20ECOLE%20PERFORMANCE!5e0!3m2!1sfr!2sfr!4v1709661464389!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="rowCard row justify-content-center">
+                <div class="col-auto">
+                    <div class="cardAgencies card" style="width: 35rem;">
+                        <img src="{{ vich_uploader_asset(mulhouse, 'imageFile') }}" class="card-img-top" alt="Photo of the agency in Mulhouse">
+                        <div class="cardAgency card-body">
+                            <h1 class="cardH1Agency card-text text-center">Agence de {{ mulhouse.city }}</h1>
+                            <p><i class=" cardPAgency fa-solid fa-location-dot"></i> : {{ mulhouse.street }}, {{ mulhouse.zip }} {{ mulhouse.city }}</p>
+                            <p><i class="fa-solid fa-clock"></i> Horaires :</p>
+                            <ul class="schedule">
+                                <li><span class="day">Lundi :</span> {{ (mulhouse.mondayOpening is null and mulhouse.mondayClosing is null) ? 'Fermée' : (mulhouse.mondayOpening|date('H:i') ~ '–' ~ mulhouse.mondayClosing|date('H:i')) }}</li>
+                                <li><span class="day">Mardi :</span> {{ (mulhouse.tuesdayOpening is null and mulhouse.tuesdayClosing is null) ? 'Fermée' : (mulhouse.tuesdayOpening|date('H:i') ~ '–' ~ mulhouse.tuesdayClosing|date('H:i')) }}</li>
+                                <li><span class="day">Mercredi :</span> {{ (mulhouse.wednesdayOpening is null and mulhouse.wednesdayClosing is null) ? 'Fermée' : (mulhouse.wednesdayOpening|date('H:i') ~ '–' ~ mulhouse.wednesdayClosing|date('H:i')) }}</li>
+                                <li><span class="day">Jeudi :</span> {{ (mulhouse.thursdayOpening is null and mulhouse.thursdayClosing is null) ? 'Fermée' : (mulhouse.thursdayOpening|date('H:i') ~ '–' ~ mulhouse.thursdayClosing|date('H:i')) }}</li>
+                                <li><span class="day">Vendredi :</span> {{ (mulhouse.fridayOpening is null and mulhouse.fridayClosing is null) ? 'Fermée' : (mulhouse.fridayOpening|date('H:i') ~ '–' ~ mulhouse.fridayClosing|date('H:i')) }}</li>
+                                <li><span class="day">Samedi :</span> {{ (mulhouse.saturdayOpening is null and mulhouse.saturdayClosing is null) ? 'Fermée' : (mulhouse.saturdayOpening|date('H:i') ~ '–' ~ mulhouse.saturdayClosing|date('H:i')) }}</li>
+                                <li><span class="day">Dimanche :</span> {{ (mulhouse.sundayOpening is null and mulhouse.sundayClosing is null) ? 'Fermée' : (mulhouse.sundayOpening|date('H:i') ~ '–' ~ mulhouse.sundayClosing|date('H:i')) }}</li>
+                            </ul>
+                            <p><i class="fa-solid fa-phone"></i> : {{ mulhouse.mobile }}</p>
+                            <p><i class="fa-solid fa-at"></i> : {{ mulhouse.email }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="card" style="width: 35rem;">
+                        <img src="{{ vich_uploader_asset(pfastatt, 'imageFile') }}" class="card-img-top" alt="Photo of the agency in Pfastatt">
+                        <div class="cardAgency card-body">
+                            <h1 class="cardH1Agency card-text text-center">Agence de {{ pfastatt.city }}</h1>
+                            <p><i class=" cardPAgency fa-solid fa-location-dot"></i> : {{ pfastatt.street }}, {{ pfastatt.zip }} {{ pfastatt.city }}</p>
+                            <p><i class="fa-solid fa-clock"></i> Horaires :</p>
+                            <ul class="schedule">
+                                <li><span class="day">Lundi :</span> {{ (pfastatt.mondayOpening is null and pfastatt.mondayClosing is null) ? 'Fermée' : (pfastatt.mondayOpening|date('H:i') ~ '–' ~ pfastatt.mondayClosing|date('H:i')) }}</li>
+                                <li><span class="day">Mardi :</span> {{ (pfastatt.tuesdayOpening is null and pfastatt.tuesdayClosing is null) ? 'Fermée' : (pfastatt.tuesdayOpening|date('H:i') ~ '–' ~ pfastatt.tuesdayClosing|date('H:i')) }}</li>
+                                <li><span class="day">Mercredi :</span> {{ (pfastatt.wednesdayOpening is null and pfastatt.wednesdayClosing is null) ? 'Fermée' : (pfastatt.wednesdayOpening|date('H:i') ~ '–' ~ pfastatt.wednesdayClosing|date('H:i')) }}</li>
+                                <li><span class="day">Jeudi :</span> {{ (pfastatt.thursdayOpening is null and pfastatt.thursdayClosing is null) ? 'Fermée' : (pfastatt.thursdayOpening|date('H:i') ~ '–' ~ pfastatt.thursdayClosing|date('H:i')) }}</li>
+                                <li><span class="day">Vendredi :</span> {{ (pfastatt.fridayOpening is null and pfastatt.fridayClosing is null) ? 'Fermée' : (pfastatt.fridayOpening|date('H:i') ~ '–' ~ pfastatt.fridayClosing|date('H:i')) }}</li>
+                                <li><span class="day">Samedi :</span> {{ (pfastatt.saturdayOpening is null and pfastatt.saturdayClosing is null) ? 'Fermée' : (pfastatt.saturdayOpening|date('H:i') ~ '–' ~ pfastatt.saturdayClosing|date('H:i')) }}</li>
+                                <li><span class="day">Dimanche :</span> {{ (pfastatt.sundayOpening is null and pfastatt.sundayClosing is null) ? 'Fermée' : (pfastatt.sundayOpening|date('H:i') ~ '–' ~ pfastatt.sundayClosing|date('H:i')) }}</li>
+                            </ul>
+                            <p><i class="fa-solid fa-phone"></i> : {{ pfastatt.mobile }}</p>
+                            <p><i class="fa-solid fa-at"></i> : {{ pfastatt.email }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

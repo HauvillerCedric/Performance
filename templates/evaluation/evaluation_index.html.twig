@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Evaluation de départ{% endblock %}
+
+{% block body %}
+    <div class="bannerEval"> </div>
+    <section>
+        <div class="containerEvaluation container text-start">
+            <div class="containerDirectionHome container text-start mt-3">
+                <p><a href="{{ path('app_homepage_index') }}">Accueil</a> > Évaluation de départ </p>
+            </div>
+            <hr class="firstHr mb-5 mt-5">
+            <p class="titleExplain mb-5">Pour commencer votre formation, une évaluation de vos compétences d'une durée de 50 minutes sera effectuée.</p>
+            <h1 class="h1Color">Parcours de Formation</h1>
+            <p>Cette évaluation nous permettra de vous proposer un parcours de formation personnalisé, accompagné d'une proposition chiffrée.</p>
+            <hr class="hrH1 mb-5">
+            <h1 class="h1Color">POINTS ÉVALUÉS</h1>
+            <p>Cette évaluation portera sur:</p>
+            <ul class ="ulEvaluation">
+                <li class="liColor">Vos connaissances préalables des règles du code de la route et de la conduite d'un véhicule ;</li>
+                <li class="liColor">Vos expériences en tant qu'usager de la route;</li>
+                <li class="liColor">Vos compétences psychomotrices;</li>
+                <li class="liColor">Vos motivations</li>
+            </ul>
+            <hr class="hrH1 mb-5">
+            <h1 class="h1Color">Moyen utilisé</h1>
+            <p> Cette évaluation est réalisée au moyen d'un ordinateur avec Easyévaluation</p>
+            <hr class="hrH1 mb-5">
+            <h1 class="h1Color">Réalisation du bilan</h1>
+            <p>A l’issue de l’évaluation, après explications des résultats, une grille de notation, ainsi que le volume d’heures prévisionnel vous sera transmis et un exemplaire sera conservé par l’auto-école.</p>
+            <br/>
+            <p class="pEnding">Nous serons alors en mesure d’établir une proposition chiffrée et personnalisée. Cette proposition sera basée sur le résultat de votre évaluation, toutefois ce volume pourra varier en fonction de votre implication, de la régularité de votre travail, mais aussi de votre rythme d’apprentissage.</p>
+        </div>
+    </section>
+{% endblock %}

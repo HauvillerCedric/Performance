@@ -1,0 +1,74 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Perfectionnement{% endblock %}
+
+{% block body %}
+    <div class="bannerPerfectionnement"> </div>
+
+    <section>
+    <div class="containerPerfectionnement container text-start">
+        <div class="containerDirectionHome container text-start mt-3">
+            <p><a href="{{ path('app_homepage_index') }}">Accueil</a> > Perfectionnement</p>
+        </div>
+        <hr class="firstHr mb-5 mt-5">
+        <h1 class="h1Color">Quelle est cette chose ?</h1>
+        <p>Vous n’avez pas roulé depuis un moment ou au contraire vous souhaitez contrôler vos habitudes de conduite ? Nous proposons des cours de perfectionnement et de remise à niveau pour tous ceux qui souhaitent approfondir leurs connaissances ou retrouver confiance en leur conduite</p>
+        <hr class="hrH1 mb-5">
+        <h1 class ="h1Color">Pour qui sont destinés les cours de perfectionnement ou de remise à niveau ?</h1>
+        <p>Ces cours sont ouverts à toute personne détentrice du permis de conduire de catégorie B (permis voiture), sans restriction d'âge. Ils sont conçus pour répondre aux besoins des jeunes conducteurs désireux d'approfondir leur formation, ainsi que pour ceux cherchant à rehausser leurs compétences ou à retrouver confiance et plaisir au volant.</p>
+        <p>En outre, nos cours de perfectionnement s'adressent aussi bien aux particuliers qu'aux professionnels.</p>
+        <p>Ils sont spécifiquement adaptés aux seniors qui, après une période sans conduire, souhaitent réviser certains aspects de leur conduite et retrouver une conduite sûre et confiante.</p>
+        <hr class="hrH1 mb-5">
+        <h1 class="h1Color">Pourquoi choisir des cours de perfectionnement ou de remise à niveau pour la voiture ?</h1>
+        <p>Les cours de perfectionnement ne sont pas obligatoires. Ils représentent un choix libre, volontaire et personnel ; ainsi, personne ne peut vous contraindre à les suivre.</p>
+        <p>Cependant, les motifs pour opter pour des cours de perfectionnement sont multiples :</p>
+        <ul class="ulWhite">
+            <li>Approfondir ses connaissances en matière de conduite.</li>
+            <li>Se remettre à niveau concernant la réglementation et les règles de circulation.</li>
+            <li>Retrouver confiance et plaisir au volant.</li>
+        </ul>
+        <p>Ne pas craindre la route, avoir confiance en ses compétences de conduite et en sa connaissance des règles permet d'assurer votre sécurité et celle de vos proches dans des conditions optimales lorsque vous prenez la route.</p>
+        <hr class="hrH1 mb-5">
+    </div>
+    </section>
+
+    <section>
+        <div class="containerPricePerfectionnement container">
+            <div class="rowFeePerfectionnement row">
+                <div class="col-6">
+                    <h4 class="h4ColorPerfectionnement mt-5">Inscription à l'auto école:</h4>
+                        <p class="mb-5">{{ perfectionnement.inscriptionFee }}€</p>
+                    <h4 class="h4ColorPerfectionnement">Tarif de l'heure de conduite</h4>
+                        <p>{{ perfectionnement.driving }}€</p>
+                </div>
+                <div class="col-6">
+                    <h3 class="titlePerfectionnement">Tarifs et Conditions de Conduite</h3>
+                    <p>Nous nous engageons à vous offrir des cours de conduite de qualité, adaptés à vos besoins individuels, à des tarifs compétitifs. Nos tarifs varient en fonction de la durée des cours.</p>
+                    <p>Pour garantir une expérience de conduite sûre et agréable, nous avons établi certaines conditions de conduite. Nos élèves doivent respecter les règles de sécurité routière en tout temps et suivre attentivement les instructions de nos instructeurs expérimentés. En tant que titulaire du permis de conduite, l'élève en perfectionnement s'expose aux sanctions prévues par le code de la route.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="secondContainerPerfectionnement container text-start">
+            <h1 class="h1Color">Comment son structuer nos cours de perfectionnement?</h1>
+            <p>Nos cours de perfectionnement sont conçus sur mesure pour répondre à vos besoins spécifiques. Nos instructeurs sont là pour vous accompagner et vous conseiller, afin que vous puissiez prendre conscience de vos compétences, motivations et limites.</p>
+            <p>Nous commençons par effectuer une évaluation initiale pour comprendre vos habitudes de conduite. Ensuite, nous collaborons avec vous pour identifier les domaines que vous souhaitez renforcer ou améliorer.</p>
+            <p>À votre demande, voici quelques exemples des sujets que nous pouvons aborder lors de nos cours de perfectionnement :</p>
+            <ul class="ulWhite">
+                <li>Optimisation des trajectoires</li>
+                <li>Adaptation de la vitesse selon les conditions</li>
+                <li>Pratique des signaux et repérage des indices pertinents dans l'environnement</li>
+                <li>Maîtrise des différentes manœuvres (stationnement en épi, en bataille, en créneau, marche arrière, demi-tour)</li>
+                <li>Positionnement sur la route (carrefour à sens giratoire, voies à plusieurs circulation)</li>
+                <li>Conduite dans des conditions de circulation difficiles et partagées avec d'autres usagers</li>
+                <li>Conduite par mauvaises conditions météorologiques (pluie, neige, brouillard, verglas, nuit)</li>
+                <li>Planification d'itinéraires et préparation de voyages longue distance</li>
+                <li>Utilisation des systèmes d'aide à la conduite</li>
+                <li>Maîtrise de la conduite avec boîte automatique</li>
+            </ul>
+            <p class="pEnding">Nos cours sont conçus pour vous aider à perfectionner vos compétences de conduite de manière personnalisée et efficace,</p>
+        </div>
+    </section>
+{% endblock %}

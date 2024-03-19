@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Enjeux et déroulement de la formation{% endblock %}
+
+{% block body %}
+    <div class="bannerIssues"> </div>
+    <section>
+        <div class=" containerIssues container text-start">
+            <div class="containerDirectionHome container text-start mt-3">
+                <p><a href="{{ path('app_homepage_index') }}">Accueil</a> > Enjeux et déroulement de la formation </p>
+            </div>
+            <hr class="firstHr mb-5 mt-5">
+            <p>Le véhicule est devenu indispensable pour une grande partie des jeunes de notre société. Le Permis de conduire est aujourd’hui essentiel pour trouver un travail, pour les études ou pour les loisirs. Rouler en sécurité est donc une nécessité pour tous.</p>
+            <p>Les conducteurs débutants représentent une part importante des tués et des blessés sur la route. Le programme de formation au permis de conduire est mis en place afin d’aider nos jeunes à se déplacer avec un risque faible de perdre la vie.</p>
+            <p>L’objectif est d’amener tout automobiliste débutant à la maîtrise de compétences en termes de savoir être, savoirs, savoir-faire et savoir devenir.</p>
+            <p>Le programme de formation ci-après se veut une vue d’ensemble des compétences qu’un conducteur responsable doit acquérir pour ne pas mettre sa sécurité ni celle des autres en danger.</p>
+            <p>Des cours théoriques et pratiques vous aideront à atteindre le niveau exigé pour réussir l’épreuve théorique ainsi que l’examen pratique.</p>
+            <hr class="hrH1 mb-5">
+            <h1 class="h1Color mb-5">Les différentes épreuves</h1>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            L’EPREUVE THÉORIQUE:
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class=" accordionColor accordion-body">
+                            <p>Pour réussir cette épreuve, il faut obtenir au moins 35 bonnes réponses sur 40 (5 fautes max). Parmi les 40 questions, certaines sont des vidéos, pensez à regarder les rétroviseurs et à évaluer l’intervalle de sécurité.</p>
+                            <p>Après obtention votre code est valable 5 ans (et 5 présentations à l’épreuve pratique)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            L’ÉPREUVE PRATIQUE:
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordionColor accordion-body">
+                            <p>Cette épreuve dure environs 32 minutes.  Elle a pour but de vérifier si vous êtes capable de conduire seul sans mettre en danger votre sécurité, ni celle des autres.</p>
+                            <p>Vous devrez réaliser un parcours urbain, routier et /ou autoroutier tout en appliquant les règles du code de la route et en respectant les limitation jeunes conducteurs. Vous devrez être capable d’adapter votre allure aux différentes situations, faire preuve de courtoisie envers les autres usagers, notamment les plus vulnérables. Lors de ce parcours, il vous sera demandé de suivre un itinéraire de façon autonome (pendant env 5 minutes) et de réaliser 2 manœuvres (dont un arrêt de précision). Vous aurez également une vérification portant sur un élément intérieur ou extérieur du véhicule à effectuer, répondre à une question en lien avec la sécurité routière, ainsi qu’une question portant sur les premiers secours.</p>
+                            <p>Les résultats de votre examen sera disponible environs 48h après votre passage sur Internet ou auprès de votre auto-école. En cas de réussite, vous serez en permis période probatoire avec 6 points sur votre permis.</p>
+                            <p><a href="https://www.autoecoleperformance.fr/data/uploads/2020/11/LE-PROGRAMME-DE-FORMATION.pdf" target="_blank">LE PROGRAMME DE FORMATION</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

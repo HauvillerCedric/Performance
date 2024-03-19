@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Notre équipe!{% endblock %}
+
+{% block body %}
+    <div class="bannerTeam"></div>
+
+    <section>
+        <div class="containerTeam container text-start">
+            <div class="containerDirectionHome container text-start mt-3">
+                <p><a href="{{ path('app_homepage_index') }}">Accueil</a> > Notre Equipe </p>
+            </div>
+        <hr class="firstHr mb-5 mt-5">
+            <h1 class="h1Color mb-5">Il est agréable de constater ta rapidité à réussir</h1>
+                <p class="mb-5">Raf, Jenny, Séverine, Chim, Stéphanie et les autres…
+                De loin, ils donnent l'impression d'être une bande amicale. De près, ils sont désignés comme moniteurs ou monitrices. Ce sont eux qui t'accompagneront jusqu'à la réussite.</p>
+        </div>
+    </section>
+
+    <section class="sectionTeam">
+        <div class="containerFullTeam container-fluid">
+            <div class="container">
+                <div class="row justify-content-center">
+                    {% if users is not empty %}
+                        {% for user in users %}
+                            <div class="col-md-4 mb-3" data-aos="zoom-in">
+                                <div class="cardTeamWidth card mb-3">
+                                    <img src="{{ vich_uploader_asset(user) }}" class="cardTeamImage card-img-top" alt="Photo of the employee">
+                                    <div class="cardTeamBody card-body">
+                                        <p class="cardTeamName card-text">{{ user.firstName }}</p>
+                                        <p class="cardTeamFonction card-text">{{ user.fonction }}</p>
+                                        <p class="cardTeamDescription card-text">{{ user.description }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    {% else %}
+                        <p>Aucun employé disponible pour le moment.</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+{% endblock %}
+

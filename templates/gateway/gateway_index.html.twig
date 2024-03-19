@@ -1,0 +1,79 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Passerelle vers Permis B{% endblock %}
+
+{% block body %}
+    <div class="bannerGateway"> </div>
+
+    <section>
+        <div class="containerGateway container text-start">
+            <div class="containerDirectionHome container text-start mt-3">
+                <p><a href="{{ path('app_homepage_index') }}">Accueil</a> > Passerelle vers Permis B </p>
+            </div>
+            <hr class="firstHr mb-5 mt-5">
+            <h1 class="h1Color">Quelle est cette chose ?</h1>
+            <p>Cette formation permet d'acquérir les compétences nécessaires pour conduire une voiture à transmission manuelle après avoir obtenu le permis de conduire automatique et avoir accumulé quelques mois d'expérience.</p>
+            <hr class="hrH1 mb-5">
+            <h1 class ="h1Color">Conditions d'admissibilité à la Formation Passerelle BEA en Catégorie B</h1>
+            <p>Les individus éligibles pour participer à la formation passerelle BEA en catégorie B sont ceux qui détiennent un permis de conduire de catégorie B restreint aux véhicules à transmission automatique depuis au moins trois mois et qui aspirent à acquérir des compétences de conduite sur des véhicules à transmission manuelle.</p>
+            <hr class="hrH1 mb-5">
+            <h1 class="h1Color">Chez Performance</h1>
+            <p>Pendant cette formation, vous explorerez et pratiquerez la conduite d'un véhicule à transmission manuelle avec l'assistance d'un formateur dédié, véritable coach de la conduite. Ce professionnel utilisera sa pédagogie et son expertise pour vous enseigner l'utilisation de la pédale d'embrayage et du levier de vitesse.</p>
+            <hr class="hrH1 mb-5">
+        </div>
+    </section>
+
+    <section>
+        <div class="containerPriceGateway container">
+            <div class="rowFeeGateway row">
+                <div class="col-md-6 order-md-1">
+                    <table class="tableGateway table">
+                        <tbody>
+                        <tr>
+                            <td>Inscription à l'auto-école</td>
+                            <td>{{ gateway.inscriptionFee }}€</td>
+                        </tr>
+                        <tr>
+                            <td>Forfait 7 heures de conduite</td>
+                            <td>{{ gateway.driving * 7}}€</td>
+                        </tr>
+                        <tr>
+                            <td class="table-danger">Total du forfait</td>
+                            <td class="table-danger">{{ gateway.inscriptionFee + (gateway.driving * 7) }}€</td>
+                        </tr>
+                        <tr>
+                            <td>Leçon de conduite supplémentaire</td>
+                            <td>{{ gateway.driving }}€</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-6 order-md-2">
+                    <h3 class="titleFeeGateway">Tarifs et Conditions de Conduite</h3>
+                    <p>Lorsque vous vous inscrivez à notre auto-école, le tarif comprend non seulement la création de votre dossier, mais également la procédure de création du permis. Nous nous engageons à vous accompagner tout au long de ce processus administratif afin de rendre votre expérience aussi fluide que possible.</p>
+                    <p>Il est important de noter que conformément à la loi, un délai de 7 heures de conduite est obligatoire. Aucun titre ne sera réalisé sans le respect de cette condition.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="secondContainerGateway container text-start">
+            <h1 class="h1Color">Le Programme de Formation BEA en Catégorie B</h1>
+            <p>La formation BEA en catégorie B, d'une durée totale de 7 heures, se déroule entièrement au volant d'un véhicule à transmission manuelle, avec la supervision constante d'un de nos instructeurs. Notre objectif principal est de vous doter des compétences nécessaires pour conduire en toute sécurité un véhicule équipé d'une boîte de vitesses manuelle à la fin de la formation.</p>
+            <p>La formation se compose de deux séquences distinctes :</p>
+            <p>Une première séquence de 2 heures, effectuée dans des conditions de circulation peu ou pas dense, permet à l'apprenant d'acquérir les compétences suivantes :</p>
+            <ul class="ulWhite">
+                <li>Compréhension du fonctionnement du point de patinage de l'embrayage et mise en pratique de cette notion ;</li>
+                <li>Apprentissage de la réalisation d'un démarrage en côte en toute sécurité.</li>
+            </ul>
+            <p>La seconde séquence, d'une durée de 5 heures, se déroule dans des conditions de circulation variées, incluant des situations simples et complexes. Cette partie de la formation vise à développer les compétences suivantes :</p>
+            <ul class="ulWhite">
+                <li>Utilisation sécurisée de la boîte de vitesses manuelle dans diverses conditions, avec une emphase sur les techniques d'écoconduite ;</li>
+                <li>Capacité à contrôler le véhicule en adaptant la vitesse et la trajectoire selon l'environnement et les conditions de circulation.</li>
+            </ul>
+            <p class="pEnding">À la fin de la formation, un bilan personnalisé est dressé, accompagné de conseils supplémentaires spécifiques à la conduite de véhicules de catégorie B à boîte manuelle. Les participants reçoivent également une attestation de suivi de formation ainsi qu'un dossier complet à présenter aux autorités compétentes pour la validation de la formation et l'obtention d'un nouveau permis de conduire.</p>
+        </div>
+    </section>
+
+{% endblock %}

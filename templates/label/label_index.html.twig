@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Le label qualité{% endblock %}
+
+{% block body %}
+    <div class="bannerLabel"> </div>
+    <section>
+        <div class="containerLabel container text-start">
+            <div class="containerDirectionHome container text-start mt-3">
+                <p><a href="{{ path('app_homepage_index') }}">Accueil</a> > Le label qualité </p>
+            </div>
+            <hr class="firstHr mb-5 mt-5">
+            <h1 class="h1Color mb-5"> Une certification pour toujours viser l'excellence</h1>
+            <img src="{{ asset('assets/images/logoLabel.jpg') }}" class="logoQualiteLabel mb-5"  alt="Certification logo">
+            <p class="pEnding">
+                L'école Performance s'est engagée dans une démarche certifiée de qualité de formation et a obtenu le label "Qualité de formation au sein des écoles de conduite". Le référentiel qualité associé à cette démarche vise à améliorer et à uniformiser la qualité des actions de formation professionnelle continue. Il permet également aux financeurs de vérifier que les organismes de formation respectent les critères de qualité relatifs à leurs activités de formation.</p>
+        </div>
+    </section>
+{% endblock %}
